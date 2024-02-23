@@ -13,7 +13,7 @@
     <!-- This part is to load main.js -->
     <script type="text/javascript" src="../main.js"></script>
 
-
+    
 
 
     <!-- Next part is for new coomands -->
@@ -40,57 +40,60 @@
         }
     };
     </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
 
     <!-- CSS -->
 
     <link rel="stylesheet" , href="../style.css" />
-
-    <!-- This part restart counter of cards to start at n+1 -->
-    <style>
-        body.number-title{
-          counter-reset: sectionCounter 0 cardCounter ;
-        }
-        h1.number-title{
-          counter-reset: sectionCounter 0 cardCounter ;
-        }
-      </style>
-  
     <!-- Top Menu  -->
-
-
-    <header class="main-header">
-        <h1> Tecnolologías de la información y comunicación II  </h1>
-       <nav class="top-nav">
-        <ul>
-            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Home.html"> Inicio  </a> </li>
-            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Informacion_General.html"> Información general </a> </li>
-            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Notas.html"> Notas  </a> </li>
-            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Enlaces_externos.html"> Links </a> </li>
-           <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+    
           
-              
-            </ul>
-       </nav>
-       <!-- 
-        <nav class="small-nav" align=right>
-          <button onclick="myFunction()">Claro/Obscuro 
-        </nav> 
-      -->
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Tecnologías de la Información y Comunicación I</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
 
-      </header>
+      
+        </header>
 
-      <!-- This part is for title in tab-->
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Quizes.html"> Quizes  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
       <title> § Semana 1   </title>
     
   </head>
 
   <body class="fondo-body" >
-    <h1 class="number-title flexbox"> Semana del 18 de abril </h1>   
-    
-    
+    <body class="fondo-body" ><h1 class="page-title"> Semana 1 </h1>
 
-    <div class="nota-box">
-        <h2 class="number-title"> Bases de datos</h2>  
+    
+     <h1 class="page-subtitle">Bases de datos</h1>
+
+    <div class="nota-box"><h1 class="number-title"> Bases de datos</h1>    
         <p> Una base de datos es un conjunto de información organizada de forma lógica, de
 tal manera que es posible extraer toda la información o una parte de ella en
 cualquier momento.
@@ -129,7 +132,7 @@ encuentran: Microsoft Access y MySQL.
     </div>
 
     <div class="nota-box">
-        <h2 class="number-title"> Bases de datos VS hojas de calculo</h2>
+        <h1 class="number-title"> Bases de datos VS hojas de calculo</h1>  
 <p>
     Las bases de datos y las hojas de cálculo son herramientas útiles para almacenar
 información. Las principales diferencias entre ambas son:
@@ -157,7 +160,7 @@ y segura a muchos usuarios al mismo tiempo.
 
 
     <div class="nota-box">
-        <h2 class="number-title"> Bases de datos relacional </h2>
+        <h1 class="number-title"> Bases de datos relacional </h1>  
     
         <p>
             Las bases de datos se pueden clasificar de acuerdo a la función de la base de
@@ -182,7 +185,7 @@ común.
     </div>
 
 <div class="nota-box">
-    <h2 class="number-title"> Microsoft Access</h2>
+    <h1 class="number-title"> Microsoft Access</h1>  
 
 <p>
     Hoy en día muchas de las actividades que se desempeñan en una empresa
@@ -241,7 +244,7 @@ herramienta y resolver fácilmente tareas en tu empresa, trabajo u hogar.
 </div>
 
 <div class="ejercicio-box">
-    <h2 class="number-title" > Tarea 1 </h2>
+    <h1 class="number-title" > Tarea 1 </h1>  
     <ol>
         <li>
             Dar tres ejemplos (especificando detalles) de distintas aplicaciones de bases de
@@ -309,7 +312,7 @@ respectivamente.
 
 
   <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio. Tabla Alumnos</h2>
+    <h1 class="number-title"> Ejercicio. Tabla Alumnos</h1>  
     <p>Supongamos que se desea almacenar información sobre estudiantes en una universidad pequeña.
      Se desea almacenar y administar  la información mas relevante  de los alumnos</p>
     
@@ -519,7 +522,7 @@ respectivamente.
     
 <!-- 
 <div class="info-box">
-    <h2 class="number-title"> La noción de  área </h2>
+    <h1 class="number-title"> La noción de  área </h1>  
     <p>
         Una de las motivaciones más importantes para el desarrollo 
         del cálculo integral es el área, en particular calcular áreas 
@@ -555,7 +558,7 @@ respectivamente.
 </div>
 
 <div class="nota-box">
-    <h2 class="number-title"> El ejemplo</h2>
+    <h1 class="number-title"> El ejemplo</h1>  
     <p>
         Entre otras muchas cosas Arquímides estaba interesado en calcular áreas y 
         volúmenes. Antes de cálcular áreas ya hábia calculado varios volúmenes: 
@@ -677,7 +680,7 @@ respectivamente.
 
 
 <div class="definicion-box">
-    <h2 class="number-title"> Definición</h2>
+    <h1 class="number-title"> Definición</h1>  
 
 
         <p>
@@ -700,7 +703,7 @@ respectivamente.
 </div>
 
 <div class="nota-box">  
-    <h2 class="number-title"> Partición homogenea </h2>
+    <h1 class="number-title"> Partición homogenea </h1>  
         <p>
             Una partición se llama homogenea si todos los subintervalos, $[x_{i-1}, x_i]$,  
             tienen la misma longitud. Por ejemplo, si \(P\) es una partición homogenea 
@@ -722,7 +725,7 @@ respectivamente.
 </div>
 
 <div class="definicion-box"> 
-    <h2 class="number-title"> Definición </h2>
+    <h1 class="number-title"> Definición </h1>  
     <p>
         Dada una función acotada $f:[a,b]\to \mathbb{R}$  y $P$, 
         una partición de $[a,b]$, definimos las sumas inferiores y superiores de Riemann de $f$, 
@@ -744,7 +747,7 @@ respectivamente.
 </div>
 
  <div class="ejercicio-box">
-     <h2 class="number-title" id="Ejer:SumasSupInfParabloa"> Ejercicio </h2>
+     <h1 class="number-title" id="Ejer:SumasSupInfParabloa"> Ejercicio </h1>  
         <p>
             Considera la funcíon \(f:[0,b]\to \mathbb{R}\) dada por $f(x)=x^2$. Por \(P_n\)
             denotamos la partición homogenea de longitud \(n\).
@@ -782,7 +785,7 @@ respectivamente.
 
 <!--
     <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio </h2> 
+    <h1 class="number-title"> Ejercicio </h1>   
     <p>
         Usa la fórmula del volumen de una pirámide de base cuadrada para estimar que
         $$
@@ -799,7 +802,7 @@ respectivamente.
 
 <!-- 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p>
         Este ejercicio da otra prueba de que, para la función 
         \(f:[0,b]\to \mathbb{R}\), $f(x)=x^2$, 
@@ -823,7 +826,7 @@ respectivamente.
 
 
 <div class="ejercicio-box"> 
-   <h2 class="number-title" id="Ejer:SumasSupInfCubica"> Ejercicio</h2> 
+   <h1 class="number-title" id="Ejer:SumasSupInfCubica"> Ejercicio</h1>   
     <p>
         Este ejercicio  es similar al anterior pero para 
         la función \(f:[0,b]\to \mathbb{R}\) dada por $f(x)=x^3$.  
@@ -854,7 +857,7 @@ respectivamente.
 
 
 <div class="definicion-box">
-    <h2 class="number-title"> Definición</h2>
+    <h1 class="number-title"> Definición</h1>  
     <p>
         Una función $s:[a,b]\to \mathbb{R}$ se llama escalonada si 
         existe una partición $P$, de $[a,b]$, de tal 
@@ -874,7 +877,7 @@ respectivamente.
 
 
 <div class="definicion-box">
-    <h2 class="number-title"> Definición </h2>
+    <h1 class="number-title"> Definición </h1>  
     <p>
         Existen cierto tipo de funciones que ayudan a describir algebráicamente 
         a las funciones escalonadas y que en principio son más sencillas que éstas. Se llaman
@@ -900,7 +903,7 @@ respectivamente.
 </div>
 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p>
         Las funciones características tienen muchas propiedades que reflejan 
         propiedades de conjuntos. Este ejercicio menciona algunas de ellas.
@@ -938,7 +941,7 @@ respectivamente.
 
 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p> 
         Sea $P=\{ x_0< x_1<  \cdots< x_{n-1}< x_n  \}$ una partición de $[a,b]$ y sean 
         $s_1,\dots, s_n \in \mathbb{R}$ fijos y arbitrarios. Demuestra que
@@ -951,7 +954,7 @@ respectivamente.
 
 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p>
         Este ejercicio muestra porqué se llaman funciones escalonadas.
     </p>
@@ -966,7 +969,7 @@ respectivamente.
 </div>
 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p>
         Demuestra que toda función escalonada $s:\mathbb{R}\to \mathbb{R}$ 
         se puede escribir de la forma
@@ -982,7 +985,7 @@ respectivamente.
 
 
 <div class="ejercicio-box"> 
-    <h2 class="number-title"> Ejercicio</h2>
+    <h1 class="number-title"> Ejercicio</h1>  
     <p>
         Una partícula se mueve sobre el eje de las $x$, tomando su velocidad positiva 
         cuando se mueve hacia la derecha y negativa cuando se mueve hacia la izquierda. 
@@ -1023,7 +1026,7 @@ respectivamente.
 </div>
 
 <div class="info-box">
-    <h2> Video </h2>
+    <h2> Video </h1>  
     <p>
         En el video se presentan soluciones de los ejercicios 1.8, 1.12 y se explican las 
         funciones escalonadas.
