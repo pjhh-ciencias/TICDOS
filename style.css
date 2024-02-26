@@ -319,7 +319,7 @@ width: 100%;
 
 
 h1.title{
-  font-size: 210%;
+  font-size: 220%;
   font-weight: 600;
   /* font-style: normal; */
   /* font-family: "Muli"; */
@@ -331,7 +331,7 @@ h1.title{
   /* "Wellfleet", monospace; */
   /* 'Hina Mincho', serif; */
   /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: 0%;
+  margin-top: -2.5%;
   margin-bottom: 0%;
   padding: 0%;
   content:" ";
@@ -339,7 +339,7 @@ h1.title{
 }
 
 h1.subtitle{
-  font-size: 185%;
+  font-size: 200%;
   font-weight: 600;
   /* padding: 2%; */
   /* font-family: "Muli"; */
@@ -383,7 +383,7 @@ body.card{
           }
 
 h1.page-title{
-  font-size: 230%;
+  font-size: 240%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -398,8 +398,12 @@ h1.page-title{
   /* font-weight: 500; */
 }
 
+h1.page-title::before{
+  content: "§" counter(semanaCounter)". " ;
+}
+
 h1.page-subtitle{
-  font-size: 250%;
+  font-size: 220%;
   padding: 0%;
   margin-bottom: -1.5%;
   /* font-weight: 600; */
@@ -417,8 +421,10 @@ h1.page-subtitle{
 
 }
 
+
+
 h1.number-title{
-  font-size: 185%;
+  font-size: 220%;
   margin-top: -1.75%;
   padding: 0.25%;
   text-align: center;
