@@ -43,12 +43,24 @@
     
     <!-- This part restart counter of cards to start at n+1 -->
     <style>
-    .lista{
-        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
-      }
-    /* .sublista{
-        counter-reset: sublistaCounter 1  SubsublistaCounter;
-      } */
+    .lista
+        {
+            counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+        }
+        /* .sublista{
+            counter-reset: sublistaCounter 1  SubsublistaCounter;
+        } */
+        </style>
+
+    <style>
+            /* body.number-title
+            {
+            counter-reset: sectionCounter 1 subsectioncounter ;
+            } */
+        h1.page-title
+            {
+            counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+            }
     </style>
 
     <!-- CSS -->
@@ -87,7 +99,8 @@
     
     </head>
 
-    <body class="fondo-body" ><h1 class="page-title"> Titulo Semana </h1>   
+    <body class="fondo-body" ><h1 class="page-title"> Titulo Semana </h1>  
+
     <h1 class="page-subtitle">Bases de datos</h1>
 
     <div class="nota-box"><h1 class="number-title"> Bases de datos</h1>    

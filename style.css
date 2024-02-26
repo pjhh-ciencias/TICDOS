@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap'); /* font-family: 'Pangolin', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
@@ -35,6 +35,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');/* font-family: 'Space Mono', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
 /* font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family= Slab:wght@500&family=VT323&display=swap'); /* font-family: "VT323", monospace;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /* font-family: "Graduate", serif; */
+
 
 html, body{
   margin: 0;
@@ -78,7 +82,7 @@ html, body{
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  width: 10%;
+  width: 7%;
 }
 
 .flexbox{
@@ -197,12 +201,14 @@ width: 100%;
 
 
 .title{
-  font-size: 280%;
-  padding: .75%;
-  /* font-weight: 700;  */
+  font-size: 210%;
+  padding: .8%;
+  /* font-weight: 200;  */
   text-align: center;
   /* font-family: "Cinzel"; */
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Graduate", serif;
+  /* 'Pangolin', cursive;*/
+  /*"VT323", monospace;/*'Fredericka the Great', cursive;*/
   /* font-family: 'Jacques Francois Shadow', cursive; */
   /* font-family: 'Caprasimo', cursive; */
   /* font-family: 'Mate SC', serif; */
