@@ -35,19 +35,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');/* font-family: 'Space Mono', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
 /* font-family: 'Josefin Slab', serif; */
-@import url('https://fonts.googleapis.com/css2?family= Slab:wght@500&family=VT323&display=swap'); /* font-family: "VT323", monospace;*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* font-family: "VT323", monospace;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /* font-family: "Graduate", serif; */
 @import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap'); /* font-family: "Wellfleet", monospace; */
 @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap'); /* font-family: "Vast Shadow", serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap'); /* font-family: "Montagu Slab", serif;*/ 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Macondo&'); /*font-family: "Macondo", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); /*font-family: "Nanum Pen Script", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body{
   margin: 0;
   padding: 4%;
-  font-family: "Quicksand";  
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  /*"Quicksand";    */
   /* font-family: 'Noto Serif Tangut', serif; */
   /* font-family: 'GFS Neohellenic', sans-serif; */
   /* font-family: 'Neucha', cursive; */
@@ -321,24 +327,27 @@ width: 100%;
 h1.title{
   font-size: 220%;
   font-weight: 600;
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  padding: 0.25%;
+  content:" ";
+  text-align: center;
+  font-family: 'EB Garamond', serif;
   /* font-style: normal; */
   /* font-family: "Muli"; */
   /* font-family: 'Pangolin', cursive; */
   /* font-family: 'Cabin Sketch', cursive; */
-  font-family: 'EB Garamond', serif;
   /* "Montagu Slab", serif; */
   /* "Vast Shadow", serif; */
   /* "Wellfleet", monospace; */
   /* 'Hina Mincho', serif; */
   /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: -2.5%;
-  margin-bottom: 0%;
-  padding: 0%;
-  content:" ";
-  color: rgb(0, 77, 179);
+  
+  /* color: rgb(0, 77, 179); */
+  color: rgb(3, 89, 165); 
 }
 
-h1.subtitle{
+h2.title{
   font-size: 200%;
   font-weight: 600;
   /* padding: 2%; */
@@ -350,10 +359,30 @@ h1.subtitle{
   margin-top: 2.5%;
   /* margin-bottom: -2%; */
   /* content:" "; */
-  color: rgb(0, 77, 179);
-  text-align: center;
+  /* color: rgb(0, 77, 179); */
+  color: rgb(3, 89, 165); 
+  text-align: left;
   width: 100%;
 }
+
+h2.title{
+  font-size: 200%;
+  font-weight: 600;
+  /* padding: 2%; */
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: 2.5%;
+  /* margin-bottom: -2%; */
+  /* content:" "; */
+  /* color: rgb(0, 77, 179); */
+  color: rgb(3, 89, 165); 
+  text-align: left;
+  width: 100%;
+}
+
 /* 
 .secciones-main ul{
   margin: 0;
@@ -398,9 +427,28 @@ h1.page-title{
   /* font-weight: 500; */
 }
 
-h1.page-title::before{
+
+
+h1.page-number-title{
+  font-size: 240%;
+  text-align: center;
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+  /* font-weight: 500; */
+}
+
+h1.page-number-title::before{
   content: "§" counter(semanaCounter)". " ;
 }
+
 
 h1.page-subtitle{
   font-size: 220%;
@@ -425,27 +473,35 @@ h1.page-subtitle{
 
 h1.number-title{
   font-size: 220%;
-  margin-top: -1.75%;
+  font-weight: 600;
+  margin-top: -2.5%;
+  margin-bottom: 0%;
   padding: 0.25%;
+  content:" ";
   text-align: center;
   /* font-weight: 800; */
   /* font-family: "Muli"; */
-  font-family: 'Hina Mincho', serif;
+  font-family: 'EB Garamond', serif;
+  /* 'Hina Mincho', serif; */
   /* font-size: 33px; */
   color: rgb(3, 89, 165); 
 }
 
 h1.number-title::before{
   /* font-family: "Roboto"; */
-  font-family: 'Hina Mincho', serif;  
+  font-family: 'EB Garamond', serif;
+  /* 'Hina Mincho', serif;   */
   counter-increment: sectionCounter;
   content: counter(semanaCounter)"."counter(sectionCounter)".";
 }
 
 h2.number-title{
-  margin-top: -1.5%;
-  padding: 0.25%;
-  font-size: 175%;
+  font-size: 200%;
+  font-weight: 600;
+  margin-top: 0%;
+  padding: 0%;
+  font-size: 185%;
+  margin-top: 2.5%;
   font-family: 'Hina Mincho', serif;
   color: rgb(3, 89, 165); 
 }

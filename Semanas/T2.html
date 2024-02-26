@@ -102,7 +102,7 @@
     <body class="fondo-body" >
         
     <!-- <h1 class="page-title"> Modelo Entidad-Relación y Modelo Relacional </h1>   -->
-    <h1 class="page-title">Modelo entidad-relación</h1>  
+    <h1 class="page-number-title">Modelo entidad-relación</h1>  
     
     <div class="nota-box"><h1 class="title">Introducción</h1>
       <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
@@ -128,23 +128,21 @@
         <b>Es el elemento fundamental que hay que caracterizar</b>.
       </p>
       
-      <p>Una entidad se <b>representa con sustantivos en singular</b>
-        que encierran un concepto, y es labor del analista identificar dichos sustantivos.</p>
+      <p>Una entidad se <b>representa con sustantivos en singular</b> que encierran un concepto, y es labor del analista identificar dichos sustantivos.
+      </p>
 
-        <p><b>Ejemplos:</b> Los siguientes son ejemplos de entidad<br>       
-          
-            <p>
-          <ul>
-            <li>"Empleado",</li> 
-            <li>"Cliente",</li>
-            <li>"Factura",</li> 
-            <li>"Línea de factura",</li>
-            <li>"Proveedor".</li>
-          </ul>
-        </p>
-          
+        <h2 class="number-title"> Ejemplos</h2> Los siguientes son ejemplos de entidad<br>       
+          <p>
+            <ul>
+              <li>"Empleado",</li><br>
+              <li>"Cliente",</li><br>
+              <li>"Factura",</li><br> 
+              <li>"Línea de factura",</li><br>
+              <li>"Proveedor".</li>
+            </ul>
           </p>
-
+          
+          <h2 class="number-title"> Ocurrencia y atributos</h2>
 
         <p><!-- Entidad es un concepto abstracto.--> Cada elemento concreto de una entidad es una <b>ocurrencia</b>.
           En el ejemplo de la entidad "Empleado", cada uno de los empleados es una ocurrencia de dicha
@@ -152,7 +150,7 @@
           
           <p><li>Un empleado tendrá nombre, apellidos, NIF, dirección postal, número de teléfono, etc. </li></p>
 
-          <p>Cada uno de esos datos es un <b>atributo</b>, y cada ocurrencia tiene distintos valores para cada atributo.</p>
+          <p>Cada uno de esos datos es un <b>atributo</b>, y cada ocurrencia tiene <i>distintos valores para cada atributo</i>.</p>
 
           <p><li>En la entidad "Empleado", un empleado concreto tendrá "Juan Antonio" como valor de su atributo "Nombre", "García Corredor"
           como valor de su atributo "Apellidos" y "52874660Y" como valor de su atributo "NIF".</li></p>
@@ -168,9 +166,8 @@
               valores para todos sus atributos.</li>
           </ol>
         </p>
-    </div>
-
-    <div class="nota-box"><h3>Representación gráfica de una entidad</h3>
+    
+    <h2 class="number-title">Representación gráfica de una entidad</h2>
       <p>La <b>representación gráfica de una entidad</b> consiste en un <b>rectángulo</b> con el nombre de la entidad
         en su interior, generalmente en mayúsculas. Los <b>atributos asociados</b> a una entidad se pueden
         representar de dos formas:
@@ -186,9 +183,9 @@
         </div>
         <br>
       </p>
-    </div>
+    
 
-    <div class="nota-box"><h3>Clasificación de entidades</h3>
+    <h2 class="number-title">Clasificación de entidades</h2>
        <p>Hay dos tipos de entidades:</p>
         <ol>
           <li> <b>Fuerte o regular</b>. No depende de otra. Corresponde a la inmensa mayoría de las entidades.</li><br>
@@ -216,47 +213,45 @@
         </p>
     </div>
 
-    <div class="nota-box"><h2 class="number-title"> Relación</h2>
+    <div class="nota-box"><h1 class="number-title"> Relación</h1>
+
       <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se denotan 
-        con <b>expresiones verbales</b>.</p>
-    </div>
-  
-    <div class="nota-box"><b>Ejemplos:</b> Se tienen relaciones entre las ocurrencias de la
-        entidad "Cliente" y las de la entidad "Factura" (ya que toda factura corresponde a un cliente),
-        y a la que podríamos llamar "genera" (se leería "cliente genera factura").
+        con <b>expresiones verbales</b>.
       </p>
-    </div>
 
-    <div class="nota-box"><h3>Representacón gráfica de una relación</h3>
+    <h2 class="number-title">Ejemplos:</h2>
+      <p>Se tienen relaciones entre las ocurrencias de la entidad "Cliente" y las de la entidad "Factura" (ya que toda factura corresponde a un cliente), y a la que podríamos llamar "genera" (se leería "cliente genera factura").
+      </p>
+
+    <h2 class="number-title">Representacón gráfica de una relación</h2>
       <p>La <b>representación gráfica de una relación</b> consiste en un <b>rombo</b> rodeando su nombre:</p>
-    
 
-<p>
-  <div class="flexbox">
-    <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
-  </div>
-  <br>
-</p>
-<div class="nota-box"></div>
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
+      </div>
+      <br>
+    </p>
 
-<h3> Clasificación de relaciones</h3>
-<p>De acuerdo al número de entidades cuyas ocurrencias relacionan, podemos dividir las relaciones
-  en varias categorías:</p>
 
-<p>
-  <ol>
-    <li><b>Binarias.</b> Relacionan entre sí ocurrencias de dos entidades.<br>
-      <p>
-      <b>Ejemplo:</b>
-      En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
-      gráficamente se representa  como:<br>
-     </p>
-<p><br>
-  <div class="flexbox">
-    <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
-  </div>
-  <br>
-</p>
+    <h2 class="number-title"> Clasificación de relaciones</h2>
+    <p>De acuerdo al número de entidades cuyas ocurrencias relacionan, podemos dividir las relaciones
+      en varias categorías:</p>
+
+    <p>
+      <ol>
+        <li><b>Binarias.</b> Relacionan entre sí ocurrencias de dos entidades.<br>
+          <p>
+        <h2 class="subtitle">Ejemplo</h2>
+        <p>En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
+          gráficamente se representa  como:
+        </p>
+        <p><br>
+          <div class="flexbox">
+            <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
+          </div>
+          <br>
+        </p>
 
     </li>
     <li><b>Ternarias.</b> Relacionan entre sí ocurrencias de tres entidades.<br>
