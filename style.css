@@ -201,12 +201,13 @@ width: 100%;
 
 
 .title{
-  font-size: 210%;
+  font-size: 290%;
   padding: .8%;
-  /* font-weight: 200;  */
+  font-weight: 600; 
   text-align: center;
   /* font-family: "Cinzel"; */
-  font-family: "Graduate", serif;
+  font-family:'Mate SC', serif; 
+  /* "Graduate", serif; */
   /* 'Pangolin', cursive;*/
   /*"VT323", monospace;/*'Fredericka the Great', cursive;*/
   /* font-family: 'Jacques Francois Shadow', cursive; */
@@ -270,7 +271,7 @@ width: 100%;
 }
 
 .title_nombre{
-  font-size: 130%;
+  font-size: 115%;
   /* padding: .8%; */
   font-weight: 800;
   font-family: 'IM Fell English', serif;
@@ -281,20 +282,21 @@ width: 100%;
 
   /* font-family: "Freckle Face"; */
   margin-bottom: 0%;
-  margin-top: -5%;
+  margin-top: 0%;
   text-align: center;
   color:  rgb(105,105,105);
   width: 100%;
+  letter-spacing: .85px;
 }
 
 
 .subtitle_nombre{
-  font-size: 115%;
+  font-size: 100%;
   /* padding: 0.15%; */
   font-weight: 800;
   /* font-family: 'IM Fell English', serif; */
   font-family: 'Shippori Mincho B1', serif;
-  margin-bottom: -8%;
+  margin-bottom: 0%;
   margin-top: 0%;
   text-align: center;
   color:  rgb(105,105,105);
