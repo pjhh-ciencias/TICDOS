@@ -38,6 +38,10 @@
 @import url('https://fonts.googleapis.com/css2?family= Slab:wght@500&family=VT323&display=swap'); /* font-family: "VT323", monospace;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /* font-family: "Graduate", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap'); /* font-family: "Wellfleet", monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap'); /* font-family: "Vast Shadow", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap'); /* font-family: "Montagu Slab", serif;*/ 
+
 
 
 html, body{
@@ -231,7 +235,7 @@ width: 100%;
   margin-bottom: 0%;
   margin-top: -1%;
   color:  rgb(0,0,128); 
-  width: 80%;
+  width: 100%;
   
 }
 
@@ -317,13 +321,19 @@ width: 100%;
 h1.title{
   font-size: 210%;
   font-weight: 600;
+  /* font-style: normal; */
   /* font-family: "Muli"; */
   /* font-family: 'Pangolin', cursive; */
   /* font-family: 'Cabin Sketch', cursive; */
-  font-family: 'Hina Mincho', serif;
+  font-family: 'EB Garamond', serif;
+  /* "Montagu Slab", serif; */
+  /* "Vast Shadow", serif; */
+  /* "Wellfleet", monospace; */
+  /* 'Hina Mincho', serif; */
   /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: -2.5%;
+  margin-top: 0%;
   margin-bottom: 0%;
+  padding: 0%;
   content:" ";
   color: rgb(0, 77, 179);
 }
@@ -331,16 +341,18 @@ h1.title{
 h1.subtitle{
   font-size: 185%;
   font-weight: 600;
+  /* padding: 2%; */
   /* font-family: "Muli"; */
   /* font-family: 'Pangolin', cursive; */
   /* font-family: 'Cabin Sketch', cursive; */
   font-family: 'Hina Mincho', serif;
   /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin-top: 2.5%;
+  /* margin-bottom: -2%; */
   /* content:" "; */
   color: rgb(0, 77, 179);
   text-align: center;
+  width: 100%;
 }
 /* 
 .secciones-main ul{
@@ -371,7 +383,7 @@ body.card{
           }
 
 h1.page-title{
-  font-size: 225%;
+  font-size: 230%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
