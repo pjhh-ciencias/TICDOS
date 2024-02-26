@@ -315,7 +315,7 @@ width: 100%;
 
 
 h1.title{
-  font-size: 180%;
+  font-size: 210%;
   font-weight: 600;
   /* font-family: "Muli"; */
   /* font-family: 'Pangolin', cursive; */
@@ -326,6 +326,21 @@ h1.title{
   margin-bottom: 0%;
   content:" ";
   color: rgb(0, 77, 179);
+}
+
+h1.subtitle{
+  font-size: 185%;
+  font-weight: 600;
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: 0%;
+  margin-bottom: 0%;
+  /* content:" "; */
+  color: rgb(0, 77, 179);
+  text-align: center;
 }
 /* 
 .secciones-main ul{
@@ -387,6 +402,7 @@ h1.page-subtitle{
   width: 100%;
   /* color: rgb(7, 136, 250);  */
   color: rgb(3, 89, 165); 
+
 }
 
 h1.number-title{
