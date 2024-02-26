@@ -550,7 +550,7 @@ h1.number-title-practica::after{
     align-content: center;
     /* padding: 1%; */    
 }
-
+/* 
 .info-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -563,7 +563,7 @@ h1.number-title-practica::after{
     font-size: 20px;
     width: 70%;
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
+} */
 
 .definicion-box{
   background:  rgb( 255, 249, 205 );
