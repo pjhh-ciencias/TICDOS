@@ -462,6 +462,7 @@ h1.page-number-title{
 }
 
 h1.page-number-title::before{
+  font-size: 120%;
   /* counter-increment: temaCounter; */
   
   content: "§" counter(temaCounter)". " ;
