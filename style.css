@@ -425,7 +425,7 @@ img.wmargen {
 
  /* /////////////   for numbering /////////////////////////*/
 body.card{
-    counter-reset: temaCounter 1 sectionCounter  subsectionCounter;
+    /* counter-reset: temaCounter 1 sectionCounter  subsectionCounter; */
     counter-reset: listaCounter 1 sublistaCounter  subsublistaCounter;
           }
 
@@ -508,9 +508,15 @@ h1.number-title::before{
   font-family: 'EB Garamond', serif;
   /* 'Hina Mincho', serif;   */
   counter-increment: sectionCounter;
-  counter-reset: subsectionCounter;
+
   content: counter(temaCounter)"."counter(sectionCounter)".";
 }
+
+
+h1.number-title::after{
+  counter-reset: subsectionCounter 0;
+}
+
 
 h2.number-title{
   font-size: 200%;
