@@ -12,9 +12,10 @@
 
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 
     
+
 
     <!-- Next part is for new coomands -->
     <script>
@@ -23,27 +24,53 @@
           macros: {
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
-          }
+          },
+          tags: "ams" /* this part is for numbered equations */
         }
       };
     </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
 
     <!-- CSS -->
 
     <link rel="stylesheet" , href="style.css" />
     <!-- Top Menu  -->
-      
+    
+          
         <header class="main-header">
         
           <div class="logo_superior_umar">
           <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
           <div class="contenedor_titulo">
-            <div class="title">Tecnologías de la Información y Comunicación II</div>
-            <div class="subtitle">Licenciatura Administración Turística</div>
-            <div class="subsubtitle">Universidad del Mar, campus Huatulco </div>
-            <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
-        
-            </div>
+          <div class="title">Tecnologías de la Información y Comunicación II</div>
+          <div class="subtitle">Licenciatura Administración Turística</div>
+          <div class="subsubtitle">Universidad del Mar, campus Huatulco </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+
+      
         </header>
 
         <nav class="top-nav">
@@ -56,8 +83,6 @@
             <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Enlaces_externos.html"> Links </a> </li>
           </ul>
           </nav>
-       
-        
         <!-- 
           <nav class="small-nav" align=right>
             <button onclick="myFunction()">Claro/Obscuro 
