@@ -514,7 +514,7 @@ h1.number-title::before{
 
 
 h1.number-title::after{
-  counter-reset: subsectionCounter 0;
+  counter-reset: subsectionCounter;
 }
 
 
