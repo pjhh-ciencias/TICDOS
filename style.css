@@ -512,12 +512,6 @@ h1.number-title::before{
   content: counter(temaCounter)"."counter(sectionCounter)".";
 }
 
-
-h1.number-title::after{
-  counter-reset: subsectionCounter;
-}
-
-
 h2.number-title{
   font-size: 200%;
   font-weight: 600;
