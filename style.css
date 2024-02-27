@@ -424,10 +424,10 @@ img.wmargen {
 }
 
  /* /////////////   for numbering /////////////////////////*/
-/* body.card{
-    counter-reset: sectionCounter 1 sectionCounter  subsectionCounter;
+body.card{
+    counter-reset: temaCounter 1 sectionCounter  subsectionCounter;
     counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
-          } */
+          }
 
 h1.page-title{
   font-size: 240%;
@@ -462,8 +462,8 @@ h1.page-number-title{
 }
 
 h1.page-number-title::before{
-  counter-increment: sectionCounter;
-  content: "§" counter(sectionCounter)". " ;
+  counter-increment: temaCounter;
+  content: "§" counter(temaCounter)". " ;
 }
 
 h1.page-subtitle{
@@ -507,7 +507,7 @@ h1.number-title::before{
   font-family: 'EB Garamond', serif;
   /* 'Hina Mincho', serif;   */
   counter-increment: sectionCounter;
-  content: counter(sectionCounter)"."counter(sectionCounter)".";
+  content: counter(temaCounter)"."counter(sectionCounter)".";
 }
 
 h2.number-title{
@@ -525,7 +525,7 @@ h2.number-title::before{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;
   counter-increment: subsectionCounter;
-  content: counter(sectionCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
+  content: counter(temaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
 }
 
 
@@ -564,7 +564,7 @@ h1.number-title-practica::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
-  content: " " counter(sectionCounter)"."counter(sectionCounter) ".";
+  content: " " counter(temaCounter)"."counter(sectionCounter) ".";
 }
 
 
@@ -1107,6 +1107,6 @@ h1.number-title-practica:after{
   
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
-  content: " " counter(sectionCounter)"."counter(sectionCounter) ".";
+  content: " " counter(temaCounter)"."counter(sectionCounter) ".";
 }
 */
