@@ -424,10 +424,10 @@ img.wmargen {
 }
 
  /* /////////////   for numbering /////////////////////////*/
-body.card{
+/* body.card{
     counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
     counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
-          }
+          } */
 
 h1.page-title{
   font-size: 240%;
@@ -462,6 +462,7 @@ h1.page-number-title{
 }
 
 h1.page-number-title::before{
+  counter-increment: semanaCounter;
   content: "§" counter(semanaCounter)". " ;
 }
 
