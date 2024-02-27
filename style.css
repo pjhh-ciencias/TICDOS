@@ -426,7 +426,7 @@ img.wmargen {
  /* /////////////   for numbering /////////////////////////*/
 body.card{
     counter-reset: temaCounter 1 sectionCounter  subsectionCounter;
-    counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
+    counter-reset: listaCounter 1 sublistaCounter  subsublistaCounter;
           }
 
 h1.page-title{
@@ -462,7 +462,8 @@ h1.page-number-title{
 }
 
 h1.page-number-title::before{
-  counter-increment: temaCounter;
+  /* counter-increment: temaCounter; */
+  
   content: "§" counter(temaCounter)". " ;
 }
 
@@ -507,13 +508,14 @@ h1.number-title::before{
   font-family: 'EB Garamond', serif;
   /* 'Hina Mincho', serif;   */
   counter-increment: sectionCounter;
+  counter-reset: subsectionCounter;
   content: counter(temaCounter)"."counter(sectionCounter)".";
 }
 
 h2.number-title{
   font-size: 200%;
   font-weight: 600;
-  margin-top: -2.5%;
+  margin-top: 0%;
   padding: 0.25%;
   font-size: 185%;
   /* font-family: 'EB Garamond', serif; */
@@ -523,8 +525,8 @@ h2.number-title{
 
 h2.number-title::before{
   /* font-family: "Roboto"; */
-  font-family: 'Hina Mincho', serif;
   counter-increment: subsectionCounter;
+  font-family: 'Hina Mincho', serif;
   content: counter(temaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
 }
 
