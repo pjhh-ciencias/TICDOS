@@ -51,7 +51,7 @@ html, body{
   padding: 4%;
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600 */
   font-style: normal;
   /*"Quicksand";    */
   /* font-family: 'Noto Serif Tangut', serif; */
@@ -383,6 +383,24 @@ h2.title{
   width: 100%;
 }
 
+h3.title{
+  font-size: 160%;
+  font-weight: 600;
+  padding: 0%;
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: 0%;
+  margin-bottom: 0%; 
+  /* content:" "; */
+  /* color: rgb(0, 77, 179); */
+  color: rgb(3, 89, 165); 
+  text-align: left;
+  width: 100%;
+}
+
 /* 
 .secciones-main ul{
   margin: 0;
@@ -427,8 +445,6 @@ h1.page-title{
   /* font-weight: 500; */
 }
 
-
-
 h1.page-number-title{
   font-size: 240%;
   text-align: center;
@@ -449,7 +465,6 @@ h1.page-number-title::before{
   content: "§" counter(semanaCounter)". " ;
 }
 
-
 h1.page-subtitle{
   font-size: 220%;
   padding: 0%;
@@ -468,7 +483,6 @@ h1.page-subtitle{
   color: rgb(3, 89, 165); 
 
 }
-
 
 
 h1.number-title{
@@ -498,10 +512,10 @@ h1.number-title::before{
 h2.number-title{
   font-size: 200%;
   font-weight: 600;
-  margin-top: 0%;
-  padding: 0%;
+  margin-top: -2.5%;
+  padding: 0.25%;
   font-size: 185%;
-  margin-top: 2.5%;
+  /* font-family: 'EB Garamond', serif; */
   font-family: 'Hina Mincho', serif;
   color: rgb(3, 89, 165); 
 }
@@ -512,6 +526,8 @@ h2.number-title::before{
   counter-increment: subsectionCounter;
   content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
 }
+
+
 
 /* Para praticas  */
 
@@ -684,7 +700,7 @@ h1.number-title-practica::after{
     /* font-size: 110%; */
     /* font-weight: 600; */
     /* justify-content: space-evenly; */
-    width: 85%;
+    width: 93%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 
 }

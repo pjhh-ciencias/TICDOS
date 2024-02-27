@@ -57,7 +57,7 @@
             {
             counter-reset: sectionCounter 1 subsectioncounter ;
             } */
-        h1.page-title
+        h1.page-number-title
             {
             counter-reset: semanaCounter 2 sectionCounter  subsectionCounter;
             }
@@ -104,34 +104,35 @@
     <!-- <h1 class="page-title"> Modelo Entidad-Relación y Modelo Relacional </h1>   -->
     <h1 class="page-number-title">Modelo entidad-relación</h1>  
     
-    <div class="nota-box"><h1 class="title">Introducción</h1>
-      <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
-        es una técnica cuyo objetivo es la <b>representación</b> y <b>definición</b> de todos los datos que se introducen,
-        almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
-        las necesidades de la tecnología existente, ni otras restricciones.
-      </p>
-        
-      <p>Definimos <b>sistema de información</b> como el conjunto de procedimientos y funciones dirigidos
-        a la recolección, elaboración, evaluación, almacenamiento, recuperación, condensación y distribución
-        de informaciones dentro de una organización
-      </p>
-        <!-- Merece la pena recalcar ese factor de independencia con respecto a la implementación final. -->
-      <p>El Diagrama E-R dará solución al problema planteado sin importar cuál sea el SGBD comercial que se
-        vaya a utilizar. Para ello parte de una serie de conceptos que se describen a continuación:<br>
-      </p>
+        <div class="nota-box"><h1 class="title">Introducción</h1>
+          <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
+            es una técnica cuyo objetivo es la <b>representación</b> y <b>definición</b> de todos los datos que se introducen,
+            almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
+            las necesidades de la tecnología existente, ni otras restricciones.
+          </p>
+            
+          <p>Definimos <b>sistema de información</b> como el conjunto de procedimientos y funciones dirigidos
+            a la recolección, elaboración, evaluación, almacenamiento, recuperación, condensación y distribución
+            de informaciones dentro de una organización
+          </p>
+            <!-- Merece la pena recalcar ese factor de independencia con respecto a la implementación final. -->
+          <p>El Diagrama E-R dará solución al problema planteado sin importar cuál sea el SGBD comercial que se
+            vaya a utilizar. Para ello parte de una serie de conceptos que se describen a continuación:<br>
+          </p>
 
-    </div>
+        </div>
 
-    <div class="nota-box"><h1 class="number-title"> Entidad</h1>
-      <p>Una <b>entidad</b> es cualquier objeto real o abstracto que tiene existencia por sí mismo y se puede
-        identificar de una forma clara y precisa, y del cual se desea registrar información en el sistema.
-        <b>Es el elemento fundamental que hay que caracterizar</b>.
-      </p>
-      
-      <p>Una entidad se <b>representa con sustantivos en singular</b> que encierran un concepto, y es labor del analista identificar dichos sustantivos.
-      </p>
+        <div class="nota-box"><h1 class="number-title"> Entidad</h1>
+          <p>Una <b>entidad</b> es cualquier objeto real o abstracto que tiene existencia por sí mismo y se puede
+            identificar de una forma clara y precisa, y del cual se desea registrar información en el sistema.
+            <b>Es el elemento fundamental que hay que caracterizar</b>.
+          </p>
+          
+          <p>Una entidad se <b>representa con sustantivos en singular</b> que encierran un concepto, y es labor del analista identificar dichos sustantivos.
+          </p>
+        </div>
 
-        <h2 class="number-title"> Ejemplos</h2> Los siguientes son ejemplos de entidad<br>       
+        <div class="nota-box"><h2 class="number-title"> Ejemplos</h2> Los siguientes son ejemplos de entidad<br>       
           <p>
             <ul>
               <li>"Empleado",</li><br>
@@ -141,8 +142,9 @@
               <li>"Proveedor".</li>
             </ul>
           </p>
-          
-          <h2 class="number-title"> Ocurrencia y atributos</h2>
+        </div>
+         
+        <div class="nota-box"><h2 class="number-title"> Ocurrencia y atributos</h2>
 
         <p><!-- Entidad es un concepto abstracto.--> Cada elemento concreto de una entidad es una <b>ocurrencia</b>.
           En el ejemplo de la entidad "Empleado", cada uno de los empleados es una ocurrencia de dicha
@@ -166,8 +168,9 @@
               valores para todos sus atributos.</li>
           </ol>
         </p>
+      </div>
     
-    <h2 class="number-title">Representación gráfica de una entidad</h2>
+      <div class="nota-box"><h2 class="number-title">Representación gráfica de una entidad</h2>
       <p>La <b>representación gráfica de una entidad</b> consiste en un <b>rectángulo</b> con el nombre de la entidad
         en su interior, generalmente en mayúsculas. Los <b>atributos asociados</b> a una entidad se pueden
         representar de dos formas:
@@ -183,17 +186,19 @@
         </div>
         <br>
       </p>
-    
+      </div>
 
-    <h2 class="number-title">Clasificación de entidades</h2>
+      <div class="nota-box"><h2 class="number-title">Clasificación de entidades</h2>
        <p>Hay dos tipos de entidades:</p>
         <ol>
           <li> <b>Fuerte o regular</b>. No depende de otra. Corresponde a la inmensa mayoría de las entidades.</li><br>
           <li> <b>Débil</b>. La existencia de sus ocurrencias depende de la existencia de ocurrencias en otras
             entidades.</li>
         </ol>
+      </div>
 
-        <p><b>Ejemplo:</b> Consideremos un sistema de información de una <b>biblioteca</b>. Si queremos llevar un control sobre
+      <div class="nota-box"><h2 class="number-title">Ejemplo:</h2>
+         <p>Consideremos un sistema de información de una <b>biblioteca</b>. Si queremos llevar un control sobre
           las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad "Multa".</p> Debemos tener en consideración 
           los siguientes aspectos: 
 
@@ -218,48 +223,40 @@
       <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se denotan 
         con <b>expresiones verbales</b>.
       </p>
+    </div>
 
-    <h2 class="number-title">Ejemplos:</h2>
+    <div class="nota-box"><h2 class="number-title">Ejemplos:</h2>
       <p>Se tienen relaciones entre las ocurrencias de la entidad "Cliente" y las de la entidad "Factura" (ya que toda factura corresponde a un cliente), y a la que podríamos llamar "genera" (se leería "cliente genera factura").
       </p>
+    </div>
 
-    <h2 class="number-title">Representacón gráfica de una relación</h2>
+    <div class="nota-box"><h2 class="number-title">Representacón gráfica de una relación</h2>
       <p>La <b>representación gráfica de una relación</b> consiste en un <b>rombo</b> rodeando su nombre:</p>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
+        </div>
+        <br>
+      </p>
+    </div>
 
-    <p>
-      <div class="flexbox">
-        <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
-      </div>
-      <br>
-    </p>
 
-
-    <h2 class="number-title"> Clasificación de relaciones</h2>
+    <div class="nota-box"><h2 class="number-title"> Clasificación de relaciones</h2>
     <p>De acuerdo al número de entidades cuyas ocurrencias relacionan, podemos dividir las relaciones
       en varias categorías:</p>
 
-    <p>
-      <ol>
-        <li><b>Binarias.</b> Relacionan entre sí ocurrencias de dos entidades.<br>
-          <p>
-        <h2 class="subtitle">Ejemplo</h2>
-        <p>En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
-          gráficamente se representa  como:
-        </p>
-        <p><br>
-          <div class="flexbox">
-            <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
-          </div>
-          <br>
-        </p>
-
-    </li>
-    <li><b>Ternarias.</b> Relacionan entre sí ocurrencias de tres entidades.<br>
-    <p>
-     <b>Ejemplo:</b> Consideremos un sistema de información correspondiente a un centro de enseñanza.
-      Cada profesor imparte una serie de asignaturas a distintos grupos de alumnos. Si
-      disponemos de las entidades "Profesor", "Grupo" y "Asignatura", tendríamos que relacionar
-      sus ocurrencias mediante la siguiente relación ternaria:
+        <h3 class="title">Binarias.</h3><p>Relacionan entre sí ocurrencias de dos entidades. En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
+            gráficamente se representa  como:
+          </p>
+          <p><br>
+            <div class="flexbox">
+              <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
+            </div>
+            <br>
+          </p>
+          
+        <h3 class="title">Binarias.</h3><p>Relacionan entre sí ocurrencias de tres entidades. Consideremos un sistema de información correspondiente a un centro de enseñanza. Cada profesor imparte una serie de asignaturas a distintos grupos de alumnos. Si disponemos de las entidades "Profesor", "Grupo" y "Asignatura", tendríamos que relacionar
+        sus ocurrencias mediante la siguiente relación ternaria:
       <p><br>
         <div class="flexbox">
           <img src="../Imagenes/BD/Relacion_ternaria.JPG" alt="", width="auto" height="auto">
@@ -267,12 +264,9 @@
         <br>
       </p>
     </p>
-    </li>
-  <li><b>N-arias.</b> Dependiendo de la complejidad de nuestro modelo de datos podemos relacionar
-    ocurrencias de más de tres entidades. <br>
-    <p><b>Ejemplo:</b>
-      Supongamos que en la relación del ejemplo anterior
-      sea necesario, además, indicar en qué aula se imparte cada asignatura a cada grupo:
+    
+    <h3 class="title">N-arias.</h3><p>Dependiendo de la complejidad de nuestro modelo de datos podemos relacionar
+    ocurrencias de más de tres entidades. Supongamos que en la relación del ejemplo anterior sea necesario, además, indicar en qué aula se imparte cada asignatura a cada grupo:
     </p>
       <p><br>
         <div class="flexbox">
@@ -280,12 +274,14 @@
         </div>
         <br>
     </p>
+    </div>
 
-    <p><b>Observación:</b>  Como criterio de diseño se identifican <b>relaciones ternarias</b> o <b>n-arias</b> 
+    <div class="nota-box"><h2 class="number-title">Observación:</h2>  
+      <p>Como criterio de diseño se identifican <b>relaciones ternarias</b> o <b>n-arias</b> 
       cuando la acción identificada por la relación <b>afecta de forma simultánea a las ocurrencias de todas las entidades
       relacionadas</b> (un profesor imparte una asignatura a un grupo en un aula en un
       momento concreto, por lo que existe simultaneidad temporal). 
-    </p>     
+      </p>     
    
   </li>
   <li><b>Reflexivas.</b> Relacionan entre sí ocurrencias de la misma entidad. Para comprenderlas correctamente
