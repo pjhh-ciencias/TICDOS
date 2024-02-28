@@ -57,11 +57,14 @@
             {
             counter-reset: temaCounter 1 subsectioncounter ;
             } */
+            body.fondo-body{
+              counter-reset: temaCounter 0 sectionCounter;
+            }
+
         h1.page-number-title
             {
-            counter-reset: temaCounter 1 sectionCounter;
-            /* counter-reset: subsectionCounter; */
-            }
+            counter-reset: sectionCounter 0;
+            } 
 
         h1.number-title
         {
@@ -109,8 +112,7 @@
     
     </head>
 
-  <body class="fondo-body" >
-  <h1 class="page-number-title"> Referencias</h1>
+  <body class="fondo-body" ><h1 class="page-number-title"> Referencias</h1>
   <!-- Fórmulas y funciones en hojas de cálculo -->
 
 
@@ -254,7 +256,7 @@
         </ol> 
 
 
-        <h2 class="number-title"> Referencias mixtas</h2>
+        <h1 class="number-title"> Referencias mixtas</h1>
         <p>Una <b>referencia mixta</b> tiene una parte relativa y otra absoluta: la 
           columna relativa y la fila absoluta o la columna fija y la fila relativa.</p>
           
@@ -271,7 +273,7 @@
             presionamos tres veces, fijará la columna.</p>
 
 
-      <h2 class="number-title"> Uso de referencias relativas y absolutas</h2>
+      <h1 class="number-title"> Uso de referencias relativas y absolutas</h1>
 
       <p>Las referencias relativas y absolutas nos facilitarán el trabajo y nos 
         permitirán ahorrar tiempo cuando utilicemos fórmulas y funciones.</p>
@@ -283,7 +285,7 @@
         de lo que parece. </p>
                  
 
-      <h2 class="number-title"> Referencias a datos de otras hojas</h2>
+      <h1 class="number-title"> Referencias a datos de otras hojas</h1>
       <p>
         Cuando se desea utilizar una fórmula en la que hay un dato de otra hoja, es
         necesario teclear el nombre de esa hoja para referirse al dato (se denomina <b>vincular datos de
@@ -302,9 +304,8 @@
       </p>
       </div>
 
-
-
-    <div class="nota-box"><h1 class="number-title"> Barra de fórmulas</h1>
+    <h1 class="page-number-title"> Barra de fórmulas</h1>
+    <div class="nota-box">
       <p>
         Cuando trabajamos con hojas de cálculo, introduciremos en ellas 
         datos de diferentes tipos, como números, fechas y textos; y para 
