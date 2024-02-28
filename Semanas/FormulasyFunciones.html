@@ -110,22 +110,20 @@
     </head>
 
   <body class="fondo-body" >
-  <h1 class="page-number-title"> Fórmulas y funciones en Excel</h1>
+  <h1 class="page-number-title"> Referencias</h1>
+  <!-- Fórmulas y funciones en hojas de cálculo -->
 
 
       
-    <div class="nota-box"><h1 class="number-title"> Referencias</h1> 
+    <div class="nota-box"><h1 class="title"> Introducción </h1> 
 
-    <p>Las <b>referencias</b> son indispensables para trabajar 
-      con las fórmulas y las funciones. Las fórmulas pueden contener,
-      aparte de datos numéricos simples, referencias a
-      datos de otras celdas
+    <p>Las <b>referencias</b> son indispensables para trabajar con <i>fórmulas</i> y <i>funciones</i> en hojas de cálculo. 
+      Las fórmulas pueden contener, aparte de datos numéricos simples, referencias a datos de otras celdas
     </p>
 
+    <h1 class="number-title"> Referencia a una celda</h1>
 
-    <h2 class="number-title"> Referencia a una celda</h2>
-
-    <p>Sabemos que una celda puede contener datos de tipo <em>texto</em>, 
+    <p>Recordemos que una celda puede contener datos de tipo <em>texto</em>, 
       <em>números</em>, <em>fechas</em>, <em>horas</em> y, también, 
       <em>fórmulas</em> y <em>funciones</em>. Estos datos 
       pueden ser ingresados por nosotros o generarse como resultado de 
@@ -134,17 +132,25 @@
       tendremos una <b>celda de origen</b> y una <b>celda dependiente</b>. 
       Al cambiar el contenido de la celda de origen, las celdas que dependan
       de esta se actualizarán automáticamente. Para hacer referencia a una celda, nos 
-      ubicamos en la celda dependiente, ingresamos el signo igual (=)  y,
+      ubicamos en la celda dependiente, ingresamos el signo igual $(=)$  y,
       a continuación, seleccionamos la celda o escribimos el 
-      nombre de la celda de origen. Por ejemplo: <b>=A2</b>.</p>
+      nombre de la celda de origen. 
+
+      <h2 class="number-title">Ejemplo</h2>
+        <!-- <p><center><b>=A2</b>.</center> -->
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/refencia_celda.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
 
       
 
-      <p>En Excel existen tres tipos de referencias: relativas, absolutas y 
-        mixtas. A continuación las veremos en detalle</p>
+      <p>En Microsoft Excel existen tres tipos de referencias: <i>relativas</i>, <i>absolutas</i> y 
+        <i>mixtas</i>. </p>
 
 
-      <h2 class="number-title"> Referencias relativas</h2>
+      <h1 class="number-title"> Referencias relativas</h1>
 
       <p>Una <b>referencia relativa</b> es aquella que se modifica al cambiar la 
         posición de la celda dependiente (que contiene la fórmula). En este 
@@ -165,7 +171,7 @@
       <p>En la imagen anterior al copiar el contenido de la celda B3 (que hace referencia 
         a A1) y pegarlo en B7 automáticamente cambia la referencia a la celda A5.</p>
 
-      <p><h3 class="title">Observaciones:</h3>
+      <p><h2 class="number-title">Observaciones:</h2>
         <ul><li> Cuando copiamos y pegamos una fórmula en otra celda de la misma 
           columna, se modificará el número de la fila de la referencia, según la 
           posición relativa entre la celda de destino y la celda de origen. </li><br>
@@ -214,7 +220,7 @@
       </p>
       -->
 
-      <h2 class="number-title"> Referencias absolutas </h2>
+      <h1 class="number-title"> Referencias absolutas </h1>
 
       <p>Una <b>referencia absoluta</b> siempre refiere a una celda de origen 
         determinada (fija). Por eso, la utilizamos cuando queremos copiar y pegar 
