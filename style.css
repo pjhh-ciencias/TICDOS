@@ -449,13 +449,14 @@ h1.page-title{
 }
 
 h1.page-number-title{
-  font-size: 240%;
+  font-size: 250%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  /* margin-bottom: -5px; */
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
@@ -472,8 +473,8 @@ h1.page-number-title::before{
 
 h1.page-subtitle{
   font-size: 220%;
-  padding: 0%;
-  margin-bottom: -1.5%;
+  
+ 
   /* font-weight: 600; */
   text-align: center;
   font-family: 'Hina Mincho', serif;
@@ -481,6 +482,8 @@ h1.page-subtitle{
   /* font-family: 'IM Fell English', serif; */
   /* font-family: "Cinzel"; */
   margin-top: 1%;
+   margin-bottom: -1.5%;
+   padding: 0%;
   /* color:  rgb(0, 46, 145); */
   /* color: rgb(184,134,11);  */
   width: 100%;
@@ -493,9 +496,9 @@ h1.page-subtitle{
 h1.number-title{
   font-size: 220%;
   font-weight: 600;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  padding: 0.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0%;
   content:" ";
   text-align: left;
   /* font-weight: 800; */
@@ -518,8 +521,9 @@ h1.number-title::before{
 h2.number-title{
   font-size: 200%;
   font-weight: 600;
-  margin-top: 0%;
-  padding: 0.25%;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+  padding: 0%;
   font-size: 185%;
   /* font-family: 'EB Garamond', serif; */
   font-family: 'Hina Mincho', serif;
