@@ -985,6 +985,7 @@ h1.number-title-practica::after{
 
 .respButton{
   display: block;
+  
   /* border-radius: 25px; */
   border: 2.5px solid  rgba(255, 255, 255, 0.5) ;
   background-color: rgb(255, 255, 255);
@@ -997,7 +998,6 @@ h1.number-title-practica::after{
 }
 
 .respButton:hover,.respButton:focus, .respButton:active{
-vertical-align: middle;
 transition: background-color 0.75s ease;
 transition: font-size 5s ease;
 background-color: rgb(238, 250, 255);
