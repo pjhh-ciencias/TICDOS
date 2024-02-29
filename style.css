@@ -459,7 +459,7 @@ h1.page-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  /* margin-bottom: -5px; */
+  margin-bottom: 5%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
@@ -475,8 +475,8 @@ h1.page-number-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 6.5%;
-  margin-bottom: 6.5%;
+  margin-top: 2%;
+  margin-bottom: 2.5%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
@@ -488,7 +488,7 @@ h1.page-number-title{
 h1.page-number-title::before{
   font-size: normal;
   counter-increment: temaCounter; 
-  content: "§ Tema " counter(temaCounter)". " ;
+  /* content: "§ Tema " counter(temaCounter)". " ; */
 }
 
 h1.page-subtitle{
@@ -511,6 +511,75 @@ h1.page-subtitle{
   color: rgb(3, 89, 165); 
 
 }
+
+
+
+
+h1.tema-title{
+  font-size: 240%;
+  text-align: center;
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+  /* font-weight: 500; */
+}
+
+h1.tema-number-title{
+  font-size: 200%;
+  /* text-align: left; */
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  /* color: rgb(184,134,11);  */
+  color: rgb(3, 89, 165); 
+
+  /* font-weight: 500; */
+}
+
+h1.tema-number-title::before{
+  font-size: normal;
+  counter-increment: temaCounter; 
+  content: "§ Tema " counter(temaCounter)". " ;
+}
+
+h1.tema-subtitle{
+  font-size: 220%;
+  
+ 
+  /* font-weight: 600; */
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Caprasimo', cursive; */
+  /* font-family: 'IM Fell English', serif; */
+  /* font-family: "Cinzel"; */
+  margin-top: 1%;
+   margin-bottom: -1.5%;
+   padding: 0%;
+  /* color:  rgb(0, 46, 145); */
+  /* color: rgb(184,134,11);  */
+  width: 100%;
+  /* color: rgb(7, 136, 250);  */
+  color: rgb(3, 89, 165); 
+
+}
+
+
+
+
 
 
 h1.number-title{
@@ -767,6 +836,24 @@ h1.number-title-practica::after{
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
 
+.flex-box{
+  display: none;
+  /* background:  rgb(218, 237, 245); */
+  color: black;
+  /* border-radius: 15px; */
+  /* padding: 1px; */
+  /* border-top:  0px solid   rgb(218, 237, 245); */
+  /* border-bottom:  0px solid   rgb(218, 237, 245); */
+  /* border-right:  10px solid   rgb(218, 237, 245); */
+  /* border-left:  0px solid   rgb(218, 237, 245); */
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+  /* width: 85%; */
+  /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
+}
+
 .prop-box{
     background:  rgb( 255, 249, 205 );
     border-radius: 25px;
@@ -893,6 +980,46 @@ h1.number-title-practica::after{
 .temaButton:hover::after{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+
+.respButton{
+  display: block;
+  /* border-radius: 25px; */
+  border: 2.5px solid  rgba(255, 255, 255, 0.5) ;
+  background-color: rgb(255, 255, 255);
+  /* margin-right: auto; */
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-top: 0%;
+  font-size: 100%;
+  /* margin-bottom: 0px; */
+}
+
+.respButton:hover{
+transition: background-color 0.75s ease;
+transition: font-size 5s ease;
+background-color: rgb(238, 250, 255);
+/* font-size: 185%; */
+/* font-weight: 550; */
+/* color: rgb(25,25,112); */
+/* width: 50%; */
+
+border-radius: 60px; 
+-webkit-border-radius: 50px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+transition-duration: 10s;
+-webkit-transition-duration: 0s;
+  /* transform: perspective(1px) translateZ(0); */
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.respButton:hover::after{
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
 
 

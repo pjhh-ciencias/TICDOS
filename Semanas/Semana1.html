@@ -11,7 +11,7 @@
 
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 
     
 
@@ -61,16 +61,21 @@
               counter-reset: temaCounter 0 sectionCounter;
             }
 
-        h1.page-number-title
+            h1.page-number-title
             {
             counter-reset: sectionCounter 0;
             } 
 
-        h1.number-title
-        {
-        counter-reset: subsectionCounter;
-        /* counter-reset: subsectionCounter; */
-        }
+            h1.tema-number-title
+                {
+                counter-reset: sectionCounter 0;
+                } 
+
+            h1.number-title
+            {
+            counter-reset: subsectionCounter;
+            /* counter-reset: subsectionCounter; */
+            }
 
 
 
@@ -78,14 +83,14 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" , href="../style.css" />
+    <link rel="stylesheet" , href="./style.css" />
     <!-- Top Menu  -->
     
           
         <header class="main-header">
         
           <div class="logo_superior_umar">
-          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
           </div>
           <div class="contenedor_titulo">
           <div class="title">Tecnologías de la Información y Comunicación II</div>
@@ -114,15 +119,16 @@
 
   <body class="fondo-body" >
     
-  <button class="temaButton"> <h1 class="page-number-title"> Referencias</h1> </button>
+    <h1 class="page-number-title"> Semana 1</h1> </button>  
+  <button class="respButton"> <h1 class="tema-number-title"> Referencias</h1> </button>
     <!-- <h5 class="title">Funciones de fecha y hora</h5>  </button> -->
 
-  <div class="tema-box flexbox">
+  <div class="resp-box flexbox">
   <!-- Fórmulas y funciones en hojas de cálculo -->
 
       
     <div class="nota-box">
-      <h1 class="title"> Introducción </h1> 
+      <h1 class="title"> Referencias </h1> 
 
     <p>Las <b>referencias</b> son indispensables para trabajar con <i>fórmulas</i> y <i>funciones</i> en hojas de cálculo. 
       Las fórmulas pueden contener, aparte de datos numéricos simples, referencias a datos de otras celdas
@@ -307,8 +313,8 @@
     </div>
     
 
-    <button class="temaButton"><h1 class="page-number-title"> Barra de fórmulas</h1></button>
-    <div class="tema-box flexbox">
+    <button class="respButton"><h1 class="tema-number-title"> Barra de fórmulas</h1></button>
+    <div class="resp-box flexbox">
 
     <div class="nota-box">
       <p>
@@ -432,8 +438,8 @@
     </div>
     </div>
 
-    <button class="temaButton"><h1 class="page-number-title"> Fórmulas y funciones</h1></button>
-    <div class="tema-box flexbox">
+    <button class="respButton"><h1 class="tema-number-title"> Fórmulas y funciones</h1></button>
+    <div class="resp-box flexbox">
       
     <div class="nota-box">
 
@@ -644,8 +650,8 @@
     </div>
     </div>
 
-    <button class="temaButton"><h1 class="page-number-title"> Errores   </h1> </button>
-    <div class="tema-box flexbox">
+    <button class="respButton"><h1 class="tema-number-title"> Errores   </h1> </button>
+    <div class="resp-box flexbox">
 
 
     <div class="nota-box"><h1 class="title"> Introducción</h1>
@@ -772,8 +778,8 @@
 
   </div>
 
-  <button class="temaButton"><h1 class="page-number-title"> Funciones básicas</h1> </button>
-  <div class="tema-box flexbox">
+  <button class="respButton"><h1 class="tema-number-title"> Funciones básicas</h1> </button>
+  <div class="resp-box flexbox">
 
   <div class="nota-box"><h1 class="title"> Introducción</h1>
 
@@ -925,9 +931,9 @@
         
   </div>
 
-  <button class="temaButton"><h1 class="page-number-title"> Resumen: Distintas formas de insertar funciones</h1>
+  <button class="respButton"><h1 class="tema-number-title"> Resumen: Distintas formas de insertar funciones</h1>
   </button>
-  <div class="tema-box flexbox">
+  <div class="resp-box flexbox">
           
         <div class="nota-box">
 
@@ -1614,7 +1620,7 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
   <p></p>
   
     <button class="respButton hvr-grow "> <h5 class="title">Funciones de fecha y hora</h5>  </button>
-    <div class="flex-box flexbox">
+    <div class="resp-box flexbox">
       <div class="flexbox">
         
         <table class="info" align="center">
@@ -1734,8 +1740,8 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
 
 
     
-    <button class="temaButton hvr-grow "> <h5 class="title"> Funciones de texto</h5>  </button>
-    <div class="flex-box flexbox">
+    <button class="respButton hvr-grow "> <h5 class="title"> Funciones de texto</h5>  </button>
+    <div class="resp-box flexbox">
       <div class="flexbox">
 
       <table class="info" align="center">
@@ -1854,8 +1860,8 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
       </div>
     </div>
   
-    <button class="temaButton hvr-grow "> <h5 class="title">Funciones de b&uacute;squeda</h5>  </button>
-      <div class="flex-box flexbox">
+    <button class="respButton hvr-grow "> <h5 class="title">Funciones de b&uacute;squeda</h5>  </button>
+      <div class="resp-box flexbox">
         <div class="flexbox">
     
       <table class="info" align="center">
@@ -1954,8 +1960,8 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
         </div> 
       </div>
   
-    <button class="temaButton hvr-grow "><h5 class="title"> Funciones financieras </h5>  </button>
-      <div class="flex-box flexbox">
+    <button class="respButton hvr-grow "><h5 class="title"> Funciones financieras </h5>  </button>
+      <div class="resp-box flexbox">
         <div class="flexbox">
         <table class="info" align="center">
           <tr>
@@ -2158,8 +2164,8 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
       </div>
     
     
-    <button class="temaButton hvr-grow "> <h5 class="title">Otras funciones</h5>  </button>
-      <div class="flex-box flexbox">
+    <button class="respButton hvr-grow "> <h5 class="title">Otras funciones</h5>  </button>
+      <div class="resp-box flexbox">
         <div class="flexbox"> </h1> 
         <table align="center" class="info">
           <tr>
