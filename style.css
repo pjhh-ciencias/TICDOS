@@ -749,7 +749,7 @@ h1.number-title-practica::after{
   box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);  
   }
 
-.resp-box{
+.tema-box{
   display: none;
   /* background:  rgb(218, 237, 245); */
   color: black;
