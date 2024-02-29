@@ -332,9 +332,9 @@ width: 100%;
 h1.title{
   font-size: 220%;
   font-weight: 600;
-  margin-top: -2.5%;
-  margin-bottom: 2.5%;
-  padding: 0.25%;
+  margin-top: -1%;
+  margin-bottom: 3.5%;
+  padding: 0%;
   content:" ";
   text-align: center;
   font-family: 'EB Garamond', serif;
@@ -362,7 +362,7 @@ h2.title{
   font-family: 'Hina Mincho', serif;
   /* font-family: 'Jacques Francois Shadow', cursive; */
   margin-top: 2.5%;
-  /* margin-bottom: -2%; */
+  margin-bottom: 3.5%;
   /* content:" "; */
   /* color: rgb(0, 77, 179); */
   color: rgb(3, 89, 165); 
