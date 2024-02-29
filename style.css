@@ -399,9 +399,10 @@ h3.title{
   margin-bottom: 2.5%;
   /* content:" "; */
   /* color: rgb(0, 77, 179); */
-  color: rgb(3, 89, 165); 
+  color: rgb(0, 0, 0); 
   text-align: left;
   width: 100%;
+  display: inline;
 }
 
 /* 
@@ -455,8 +456,8 @@ h1.page-number-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 6.5%;
+  margin-bottom: 6.5%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
