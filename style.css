@@ -532,13 +532,13 @@ h1.tema-title{
 }
 
 h1.tema-number-title{
-  font-size: 200%;
+  font-size: 210%;
   /* text-align: left; */
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 0%;
   padding: 0%;
   width: 100%;
@@ -996,7 +996,8 @@ h1.number-title-practica::after{
   /* margin-bottom: 0px; */
 }
 
-.respButton:hover{
+.respButton:hover,.respButton:focus, .respButton:active{
+vertical-align: middle;
 transition: background-color 0.75s ease;
 transition: font-size 5s ease;
 background-color: rgb(238, 250, 255);
