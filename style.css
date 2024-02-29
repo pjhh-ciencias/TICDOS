@@ -477,8 +477,8 @@ h1.page-number-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 2%;
-  margin-bottom: -5%;
+  margin-top: 0%;
+  margin-bottom: 3%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
@@ -816,7 +816,7 @@ h1.number-title-practica::after{
     color: black;
     border-radius: 20px;
     padding: 5%;
-    /* border: 0px solid  rgb(218,165,32); */
+    border: 0px solid  rgb(218,165,32);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -826,7 +826,7 @@ h1.number-title-practica::after{
     /* font-weight: 600; */
     /* justify-content: space-evenly; */
     width: 93%;
-    /* box-shadow: 0px 0px 10px 0px  rgb(218,165,32); */
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 
 }
 
