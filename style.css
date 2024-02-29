@@ -170,7 +170,7 @@ width: 100%;
 .top-nav a{
   padding: .5%; 
   font-size: 185%;
-  font-weight: 450;
+  font-weight: 600;
   text-decoration: none;
   color: rgb(25,25,112);
   /* font-family: system-ui; */
@@ -184,7 +184,7 @@ width: 100%;
   /* transition: font-size 0.75s ease; */
   background-color: rgb(211, 211, 211);
   font-size: 185%;
-  font-weight: 550;
+  font-weight: 400;
   color: rgb(25,25,112);
   border-radius: 10px;
   width: 100%;
