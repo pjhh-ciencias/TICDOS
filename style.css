@@ -609,7 +609,7 @@ h1.tema-subtitle{
 
 
 h1.number-title{
-  font-size: 220%;
+  font-size: 200%;
   font-weight: 600;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -634,7 +634,7 @@ h1.number-title::before{
 }
 
 h2.number-title{
-  font-size: 200%;
+  font-size: 180%;
   font-weight: 600;
   margin-top: 3.5%;
   margin-bottom: 3.5%;
