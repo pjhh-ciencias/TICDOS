@@ -231,6 +231,7 @@ width: 100%;
   /* color:  rgb(0, 46, 145); */
   color: rgb(184,134,11); 
   width: 100%;
+  line-height: 1.5em;
 }
 
 .subtitle{
@@ -370,23 +371,6 @@ h2.title{
   width: 100%;
 }
 
-h2.title{
-  font-size: 200%;
-  font-weight: 600;
-  /* padding: 2%; */
-  /* font-family: "Muli"; */
-  /* font-family: 'Pangolin', cursive; */
-  /* font-family: 'Cabin Sketch', cursive; */
-  font-family: 'Hina Mincho', serif;
-  /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: 2.5%;
-  /* margin-bottom: -2%; */
-  /* content:" "; */
-  /* color: rgb(0, 77, 179); */
-  color: rgb(3, 89, 165); 
-  text-align: left;
-  width: 100%;
-}
 
 h3.title{
   font-size: 160%;
@@ -514,9 +498,6 @@ h1.page-subtitle{
 
 }
 
-
-
-
 h1.tema-title{
   font-size: 240%;
   text-align: center;
@@ -553,7 +534,7 @@ h1.tema-number-title{
 }
 
 h1.tema-number-title::before{
-  font-size: normal;
+  /* font-size: normal; */
   counter-increment: temaCounter; 
   content: "§ Tema " counter(temaCounter)". " ;
 }
@@ -600,16 +581,11 @@ h1.tema-subtitle{
   width: 100%;
   /* color: rgb(7, 136, 250);  */
   color: rgb(3, 89, 165); 
-
 }
 
 
-
-
-
-
 h1.number-title{
-  font-size: 200%;
+  font-size: 175%;
   font-weight: 600;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -619,6 +595,7 @@ h1.number-title{
   /* font-weight: 800; */
   /* font-family: "Muli"; */
   font-family: 'EB Garamond', serif;
+  font-family: 'Gelasio', serif;
   /* 'Hina Mincho', serif; */
   /* font-size: 33px; */
   color: rgb(3, 89, 165); 
@@ -640,8 +617,9 @@ h2.number-title{
   margin-bottom: 3.5%;
   padding: 0%;
   font-size: 185%;
+  font-family: 'Gelasio', serif;
   /* font-family: 'EB Garamond', serif; */
-  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Hina Mincho', serif; */
   color: rgb(3, 89, 165); 
 }
 
