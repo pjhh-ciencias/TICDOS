@@ -131,19 +131,20 @@
     <h1 class="number-title"> Referencia a una celda</h1>
 
     <p>Recordemos que una celda puede contener datos de tipo <em>texto</em>, 
-      <em>números</em>, <em>fechas</em>, <em>horas</em> y, también, 
+      <em>números</em>, <em>fechas</em>, <em>horas</em> y, también 
       <em>fórmulas</em> y <em>funciones</em>. Estos datos 
       pueden ser ingresados por nosotros o generarse como resultado de 
       aplicar una fórmula o función. En este último caso, los datos harán 
       referencia al contenido de otra celda y serán <b>dependientes</b>. Entonces, 
       tendremos una <b>celda de origen</b> y una <b>celda dependiente</b>. 
       Al cambiar el contenido de la celda de origen, las celdas que dependan
-      de esta se actualizarán automáticamente. Para hacer referencia a una celda, nos 
-      ubicamos en la celda dependiente, ingresamos el signo igual $(=)$  y,
-      a continuación, seleccionamos la celda o escribimos el 
-      nombre de la celda de origen. 
+      de esta se actualizarán automáticamente. 
 
       <h2 class="number-title">Ejemplo</h2>
+      <p>Para hacer referencia a una celda, nos 
+        ubicamos en la celda dependiente, ingresamos el signo igual $(=)$  y,
+        a continuación, seleccionamos la celda o escribimos el 
+        nombre de la celda de origen. </p>
         <!-- <p><center><b>=A2</b>.</center> -->
           <div class="flexbox">
             <img src="../Imagenes/Excel/refencia_celda.JPG" alt="", width="auto" height="auto">
@@ -163,7 +164,9 @@
         origen a la que se hace referencia
       </p>
       <h2 class="number-title">Ejemplo</h2>
-      
+      <p>En la siguiente imagen copiamos el contenido de la celda $\mathrm{B3}$ (que hace referencia  a la celda 
+        $\mathrm{A1}$) y pegarlo en la celda $\mathrm{B7}$ automáticamente cambia la referencia a la
+         celda $\mathrm{A5}$.</p>
       <p>
         <div class="flexbox">
          <img src="../Imagenes/Excel/Referencia_relativa.JPG" alt="Al copiar el contenido de la celda B3 (que hace referencia 
@@ -172,12 +175,10 @@
        </div>
       </p>
 
-      <p>En la imagen anterior al copiar el contenido de la celda $\mathrm{B3}$ (que hace referencia  a la celda 
-        $\mathrm{A1}$) y pegarlo en la celda $\mathrm{B7}$ automáticamente cambia la referencia a la
-         celda $\mathrm{A5}$.</p>
+     
       
       <p><h2 class="number-title">Observaciones:</h2>
-        <ul><li> Cuando copiamos y pegamos una fórmula en otra celda de la misma 
+        <ol><li> Cuando copiamos y pegamos una fórmula en otra celda de la misma 
           columna, se modificará el número de la fila de la referencia, según la 
           posición relativa entre la celda de destino y la celda de origen. </li><br>
         <li>Cuando copiamos y pegamos una fórmula en una celda de la 
@@ -186,7 +187,7 @@
           de destino y la celda de origen.</li><br>
         <li>De manera predeterminada, cuando copiamos y pegamos una 
           fórmula que hace referencia a datos que se encuentran en otras celdas, Excel utiliza referencias relativas</li>
-        </ul>
+        </ol>
       </p>
       
       <!--
@@ -231,8 +232,9 @@
         determinada (fija). Por eso, la utilizamos cuando queremos copiar y pegar 
         una fórmula a otra celda y mantener la referencia a la celda de origen.</p>
 
-        <p>Para esto, debemos fijar la referencia anteponiendo el signo de pesos 
-          ($\mathrm{$}$) a la letra de la columna <b>y</b> al número de la fila: </p>
+        <h2 class="number-title">Ejemplo</h2>
+        <p>Para hacer referencia a una celda fija, debemos fijar la referencia anteponiendo el signo de pesos 
+          ($\mathrm{$}$) a la letra de la columna y al número de la fila: </p>
           
           <center><b>$\mathrm{=$A$1}$</b>.</center>
 
@@ -245,7 +247,7 @@
          </div>
         </p>
 
-        <p>Esta tarea se puede realizar de dos maneras distintas:</p>
+        <p>Para fijar una referencia lo podemos realizar de dos maneras distintas:</p>
 
         <ol><li><h5 class="title">Manual:</h5> Haciendo doble clic sobre la celda que contiene la fórmula 
           y, desde el teclado, ingresamos el signo $\mathrm{$}$ antes de la letra y del 
@@ -260,28 +262,6 @@
         </ol> 
 
 
-        <h1 class="number-title"> Referencias mixtas</h1>
-        <p>Una <b>referencia mixta</b> tiene una parte relativa y otra absoluta: la 
-          columna relativa y la fila absoluta o la columna fija y la fila relativa.</p>
-          
-          <h2 class="number-title">Ejemplos</h2>
-          <ol>
-           <li> $\mathrm{=A$2}$</li><br>
-           <li> $\mathrm{=$A2}$</li>
-          </ol>
-
-
-          <p>Si copiamos y pegamos en otra celda una fórmula que contiene una 
-            referencia mixta, la parte relativa se actualizará de manera automática 
-            y la parte absoluta permanecerá fija.<br>
-
-          <h2 class="number-title">Observación</h2>
-            Para hacer una referencia mixta, debemos anteponer el signo de pesos
-            ($\mathrm{$}$) a la letra de la columna o al número de la fila, de forma manual 
-            o mediante la tecla F4. Si la pulsamos dos veces, fijará la fila, y si la 
-            presionamos tres veces, fijará la columna.</p>
-
-
       <h2 class="number-title"> Uso de referencias relativas y absolutas</h2>
 
       <p>Las referencias relativas y absolutas nos facilitarán el trabajo y nos 
@@ -291,6 +271,36 @@
         utilizamos en las fórmulas y funciones suele ser difícil al principio. En 
         la práctica son herramientas muy útiles, y su uso es mucho más sencillo 
         de lo que parece. </p>
+
+        <h1 class="number-title"> Referencias mixtas</h1>
+        <p>Una <b>referencia mixta</b> tiene una parte relativa y otra absoluta: la 
+          columna relativa y la fila absoluta o la columna fija y la fila relativa.</p>
+          
+          <h2 class="number-title">Ejemplos</h2>
+          <p>  Para hacer una referencia mixta, debemos anteponer el signo de pesos
+            ($\mathrm{$}$) 
+            a la letra de la columna o al número de la fila, de forma manual 
+            o mediante la tecla F4. Si  pulsamos f4 dos veces, fijará la fila, y si la 
+            presionamos tres veces, fijará la columna.</p>
+            <p>
+              <ol class="two-column">
+              <li> $\mathrm{=A$2}$</li><br>
+              <li> $\mathrm{=$A2}$</li>
+              </ol>
+            </p>
+
+
+          
+
+          <h2 class="number-title">Observación</h2>
+          
+            <p>Si copiamos y pegamos en otra celda una fórmula que contiene una 
+              referencia mixta, la parte relativa se actualizará de manera automática 
+              y la parte absoluta permanecerá fija.
+            </p>
+          
+           
+
                  
 
       <h1 class="number-title"> Referencias a datos de otras hojas</h1>
