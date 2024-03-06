@@ -585,7 +585,7 @@ h1.tema-subtitle{
 
 
 h1.number-title{
-  font-size: 175%;
+  font-size: 185%;
   font-weight: 600;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -611,12 +611,12 @@ h1.number-title::before{
 }
 
 h2.number-title{
-  font-size: 180%;
+  font-size: 160%;
   font-weight: 600;
   margin-top: 3.5%;
   margin-bottom: 3.5%;
   padding: 0%;
-  font-size: 185%;
+  /* font-size: 185%; */
   font-family: 'Gelasio', serif;
   /* font-family: 'EB Garamond', serif; */
   /* font-family: 'Hina Mincho', serif; */
