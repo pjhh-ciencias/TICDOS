@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista
+        {
+            counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+        }
+        /* .sublista{
+            counter-reset: sublistaCounter 1  SubsublistaCounter;
+        } */
+        </style>
+
+    <style>
+            /* body.number-title
+            {
+            counter-reset: temaCounter 1 subsectioncounter ;
+            } */
+            body.fondo-body{
+              counter-reset: temaCounter 3 sectionCounter;
+            }
+
+            /* h1.page-number-title
+            {
+            counter-reset: sectionCounter 0;
+            }  */
+
+            h1.tema-number-title
+                {
+                counter-reset: sectionCounter 0;
+                } 
+
+            h1.number-title
+            {
+            counter-reset: subsectionCounter;
+            /* counter-reset: subsectionCounter; */
+            }
+
+
+
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Tecnologías de la Información y Comunicación II</div>
+          <div class="subtitle">Licenciatura en Administración Turística</div>
+          <div class="subsubtitle">Universidad del Mar, campus Huatulco </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+
+      
+        </header>
+
+    <nav class="top-nav">
+        <ul>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Informacion_General.html"> Información</a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Notas.html"> Notas  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Quizes.html"> Quizes  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Practicas.html">Prácticas</a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/TICDOS/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+    </nav>
+    
+    <title> Semana 2   </title>
+    
+    </head>
+
+  <body class="fondo-body" >
+    
+
+
+<!--######################################################################################################################## -->
+
+    <div class="nota-box"> <h1 class="page-number-title"> Semana 2</h1> 
+    <button class="respButton"><h1 class="tema-number-title"> Errores   </h1> </button>
+    <div class="resp-box flexbox">
+      <p>
+        En general en una hoja de cálculo, los distintos tipos de valores que podemos introducir son:
+      </p>
+      <!-- <p>
+        <ol>
+          <li>
+          <b>Valores constantes:</b> Un dato que se introduce directamente en una celda. Puede ser un número, una fecha 
+          u hora, o un texto. 
+          </li><br>
+
+          <li><b>Fórmulas:</b> Una secuencia formada por valores constantes, referencias a otras celdas, nombres, funciones, 
+            u operadores. Es una técnica básica para el análisis de datos. Se pueden realizar diversas operaciones con los
+             datos de las hojas de cálculo como \( +, -, *, /, Sen(x), Cos(x)\), etc. Recordemos que en una fórmula se pueden mezclar 
+             constantes, nombres,
+             referencias a otras celdas, operadores y funciones. </li>
+        </ol>
+      </p> -->
+
+    
+
+      <p>
+        Cuando introducimos una fórmula en una celda puede ocurrir que se produzca un <b>error</b>. Dependiendo del tipo de error
+         puede que Excel nos avise o no. Podemos detectar un error sin que nos avise cuando aparece la celda con un símbolo en la esquina superior 
+         izquierda tal como esta <img src="../Imagenes/Excel/Celda_error.PNG" alt="", width="auto" height="auto">
+      </p>
+      <p>
+        Al hacer clic sobre el símbolo aparecerá un cuadro como información error que nos permitirá saber más sobre el error:
+      </p>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/Excel/Celda_error_opciones.PNG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+      <p>
+        Dependiendo del tipo de error, al hacer clic sobre el cuadro anterior se mostrará un cuadro u otro, a veces 
+        el error sea simplemente que la fórmula de la celda no tiene el mismo aspecto que todas las demás fórmulas adyacente 
+        (por ejemplo, ésta sea una resta y todas las demás sumas).
+      </p>
+
+  
+      <p>
+        Si no sabemos qué hacer, disponemos de la opción <b>Ayuda sobre este error</b>. Si lo que queremos es comprobar la fórmula 
+        para saber si hay que modificarla o no, podríamos utilizar la opción <b>Modificar en la barra de fórmulas</b>. Si la
+        fórmula es correcta, se utilizará la opción <b>Omitir error</b> para que desaparezca el símbolo de la esquina de la celda.
+      </p>
+
+      <p>
+      <p>Puede que al introducir la fórmula nos aparezca como contenido de la celda <b>#texto</b>, siendo texto un valor que puede
+        cambiar dependiendo del tipo de error. Por ejemplo:
+      </p>
+    </p>
+
+    
+
+  <p>En ocasiones, podemos equivocarnos al ingresar manualmente el nombre de una función. En estos casos, 
+    al intentar aceptar la función para ver el resultado veremos que Excel nos muestra el error <b>#¡Nombre!</b>. De 
+    esta manera, podemos situarnos en la barra de fórmulas o presionar la tecla F2 para editarlo</p>
+  <p>Si cometemos un error al ingresar una fórmula, Excel nos devuelve un texto que informa su tipo, entre los que se encuentran:</p>
+
+
+
+     <p>        
+      <table class="info">
+        <tr>
+            <th> Mensaje</th>
+            <th> Signficado</th>
+          </tr>
+          
+          <tr>
+            <td><b>#####</b></td>
+            <td>Se produce cuando el ancho de una columna no es suficiente o cuando se utiliza una fecha o una hora negativa.</td>
+            </tr>
+            
+           <tr>
+            <td><b>#¡NUM!</b></td>
+            <td>Cuando se escriben valores numéricos no válidos en una fórmula o función.</td>
+            </tr>
+
+            
+           <tr>
+            <td><b>#¡NULO!</b></td>
+            <td>Cuando se especifica una intersección de dos áreas que no se intersectan.</td>
+            </tr>
+            <tr>
+              <td><b>#¡N/A!</b></td>
+              <td>Indica que no es posible encontrar una coincidencia exacta 
+                con el valor que se está buscando. </td>
+            </tr>
+
+
+            <tr>
+              <td><b>#¡REF!</b></td>
+              <td>Referencia a una celda inválida o inexistente.</td>
+            </tr>
+
+            <tr>
+              <td><b>#¡NÚMERO!</b></td>
+              <td>Expresa la existencia de un valor no numérico en una 
+                fórmula de parámetros numéricos.</td>
+            </tr>
+
+            <tr>
+              <td><b>#¡NOMBRE¡</b></td>
+              <td>Nombre de la función incorrecto.</td>
+            </tr>
+
+            <tr>
+              <td><b>#¡DIV/0!</b></td>
+              <td>Cuando se  intenta dividir entre cero.</td>
+            </tr>
+<!--
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          
+-->
+        </table>
+      </p>
+  </div>
+    
+  </body>
