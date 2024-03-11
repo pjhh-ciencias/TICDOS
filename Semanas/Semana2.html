@@ -188,62 +188,49 @@
 
 
      <p>        
-      <table class="info">
-        <tr>
-            <th> Mensaje</th>
-            <th> Signficado</th>
-          </tr>
-          
-          <tr>
-            <td><b>#####</b></td>
-            <td>Se produce cuando el ancho de una columna no es suficiente o cuando se utiliza una fecha o una hora negativa.</td>
-            </tr>
-            
-           <tr>
-            <td><b>#¡NUM!</b></td>
-            <td>Cuando se escriben valores numéricos no válidos en una fórmula o función.</td>
-            </tr>
-
-            
-           <tr>
-            <td><b>#¡NULO!</b></td>
-            <td>Cuando se especifica una intersección de dos áreas que no se intersectan.</td>
-            </tr>
-            <tr>
-              <td><b>#¡N/A!</b></td>
-              <td>Indica que no es posible encontrar una coincidencia exacta 
-                con el valor que se está buscando. </td>
-            </tr>
-
-
-            <tr>
-              <td><b>#¡REF!</b></td>
-              <td>Referencia a una celda inválida o inexistente.</td>
-            </tr>
-
-            <tr>
-              <td><b>#¡NÚMERO!</b></td>
-              <td>Expresa la existencia de un valor no numérico en una 
-                fórmula de parámetros numéricos.</td>
-            </tr>
-
-            <tr>
-              <td><b>#¡NOMBRE¡</b></td>
-              <td>Nombre de la función incorrecto.</td>
-            </tr>
-
-            <tr>
-              <td><b>#¡DIV/0!</b></td>
-              <td>Cuando se  intenta dividir entre cero.</td>
-            </tr>
-<!--
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-          
--->
-        </table>
+      
+<table>
+  <tr>
+    <th>Error</th>
+    <th>Descripción</th>
+    <th>Ejemplos</th>
+  </tr>
+  <tr>
+    <td><strong>#¡NULO!</strong></td>
+    <td>Indica una referencia de celda inexistente o mal escrita</td>
+    <td>=A10+B10 (si las celdas A10 o B10 no existen)</td>
+  </tr>
+  <tr>
+    <td><strong>#¡VALOR!</strong></td>
+    <td>Ocurre cuando se utiliza un tipo de dato inesperado</td>
+    <td>=A1+"Texto" (al intentar sumar un número y texto)</td>
+  </tr>
+  <tr>
+    <td><strong>#¡REF!</strong></td>
+    <td>Se produce cuando una fórmula contiene una referencia inválida</td>
+    <td>=SUM(A1:A10) (si se elimina la celda A5)</td>
+  </tr>
+  <tr>
+    <td><strong>#¡DIV/0!</strong></td>
+    <td>Indica una división por cero</td>
+    <td>=A1/0</td>
+  </tr>
+  <tr>
+    <td><strong>#¡NOMBRE?</strong></td>
+    <td>Ocurre cuando se hace referencia a un nombre no válido</td>
+    <td>=Suma(A1:A10) (si "Suma" no está definido como un nombre)</td>
+  </tr>
+  <tr>
+    <td><strong>#¡NUM!</strong></td>
+    <td>Se produce cuando se realiza una operación numérica no válida</td>
+    <td>=SQRT(-1) (calculando la raíz cuadrada de un número negativo)</td>
+  </tr>
+  <tr>
+    <td><strong>#¡N/A!</strong></td>
+    <td>Indica que el valor no está disponible</td>
+    <td>=VLOOKUP("apple", A1:B10, 3, FALSE) (si "apple" no se encuentra en el rango de búsqueda)</td>
+  </tr>
+</table>   
       </p>
   </div>
     
