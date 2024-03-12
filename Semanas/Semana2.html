@@ -206,14 +206,14 @@
     <td>=A1/0</td>
   </tr>
   <tr>
-    <td><strong>#¡NOMBRE?</strong></td>
+    <td><strong>#¿NOMBRE?</strong></td>
     <td>Ocurre cuando se hace referencia a un nombre no válido</td>
     <td>=Suma(A1:A10) (si "Suma" no está definido como un nombre)</td>
   </tr>
   <tr>
     <td><strong>#¡NUM!</strong></td>
     <td>Se produce cuando se realiza una operación numérica no válida</td>
-    <td>=SQRT(-1) (calculando la raíz cuadrada de un número negativo)</td>
+    <td>=RAIZ(-1) (calculando la raíz cuadrada de un número negativo)</td>
   </tr>
   <!-- <tr>
     <td><strong>#¡N/A!</strong></td>
@@ -264,15 +264,15 @@
       </p>
     </ul>
 
-      <p>Cualquiera sea la función que utilicemos, esta siempre deberá
+      <p>Cualquiera que sea la función que utilicemos, esta siempre deberá
         respetar la siguiente estructura:
       </p>
 
-      <center><b> = Nombre_funcion ( argumento1 , argumento2 )</b></center>
+      <center><H5 class="title"> = Nombre_funcion ( argumento1 , argumento2, ... )</H5></center>
 
 
-      <p>Podemos utilizar las funciones para realizar de manera rápida
-        distintos tipos de operaciones, tanto simples como complejas.</p>
+      <!-- <p>Podemos utilizar las funciones para realizar de manera rápida
+        distintos tipos de operaciones, tanto simples como complejas.</p> -->
         
         <h1 class="number-title">  Distintas formas de insertar funciones</h1>
 
@@ -408,12 +408,12 @@
         <p>Si queremos sumar los valores de las celdas C3 hasta C8,
         podemos escribir la siguiente fórmula usando el operador suma $+$:</p>
 
-      <center><b>= C3 + C4 + C5 + C6 + C7 + C8</b></center>
+      <center><h5 class="title">= C3 + C4 + C5 + C6 + C7 + C8</h5></center>
 
       <p>También es posible usar la función SUMA y, como único argumento,
           ingresar el rango que queremos sumar:</p>
 
-      <center><b>= SUMA(C3:C8)</b></center>
+      <center><h5 class="title">= SUMA(C3:C8)</h5></center>
 
       <p>Con ambas fórmulas llegamos al mismo resultado, pero resulta
         mucho más sencillo y rápido utilizar la última. </p>
@@ -466,17 +466,17 @@
       <tr>
         <th>
           <p>
-            <b class="ocpLegacyBold">Operador aritmético</b>
+            <h5 class="title">Operador aritmético</h5>
           </p>
         </th>
         <th>
           <p>
-            <b class="ocpLegacyBold">Significado</b>
+            <h5 class="title">Significado</h5>
           </p>
         </th>
         <th>
           <p>
-            <b class="ocpLegacyBold">Ejemplo</b>
+            <h5 class="title">Ejemplo</h5>
           </p>
         </th>
       </tr>
@@ -484,70 +484,70 @@
     <tbody>
       <tr>
         <td>
-          <p>+ (signo más)</p>
+          <center><h6 class=title>$+$ </h6> </center>
         </td>
         <td>
           <p>Suma</p>
         </td>
         <td>
-          <p>=3+3</p>
+          $=3+3$
         </td>
       </tr>
       <tr>
         <td>
-          <p>– (signo menos)</p>
+          <center><h6 class="title"> $–$ </h6></center>
         </td>
         <td>
           <p>Resta<br>
 Negación</p>
         </td>
         <td>
-          <p>=3–1<br>
-=–1</p>
+          <p>$=3–1$<br>
+$=–1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>* (asterisco)</p>
+          <center><h6 class="title">$*$</h6></center>
         </td>
         <td>
           <p>Multiplicación</p>
         </td>
         <td>
-          <p>=3*3</p>
+          <p>$=3*3$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>/ (barra oblicua)</p>
+          <center><h6 class="title">$/$</h6></center>
         </td>
         <td>
           <p>División</p>
         </td>
         <td>
-          <p>=3/3</p>
+          <p>$=3/3$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>% (signo de porcentaje)</p>
+          <center><h6 class="title">$\%$ </h6></center>
         </td>
         <td>
           <p>Porcentaje</p>
         </td>
         <td>
-          <p>=20 %</p>
+          <p>$=20 \%$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>^ (acento circunflejo)</p>
+          <center><h6 class="title">$\wedge$</h6></center>
         </td>
         <td>
           <p>Exponenciación</p>
         </td>
         <td>
-          <p>=2^3</p>
+          <h6 class="title">$=2^\wedge 3$</h6>
         </td>
       </tr>
     </tbody>
@@ -567,17 +567,17 @@ Negación</p>
       <tr>
         <th>
           <p>
-            <b class="ocpLegacyBold">Operador de comparación</b>
+            <h5 class="title">Operador de comparación</h5>
           </p>
         </th>
         <th>
           <p>
-            <b class="ocpLegacyBold">Significado</b>
+            <h5 class="title">Significado</h5>
           </p>
         </th>
         <th>
           <p>
-            <b class="ocpLegacyBold">Ejemplo</b>
+            <h5 class="title">Ejemplo</h5>
           </p>
         </th>
       </tr>
@@ -585,68 +585,68 @@ Negación</p>
     <tbody>
       <tr>
         <td>
-          <p>= (signo igual)</p>
+          <center><h6 class="title"> $=$ </h6></center>
         </td>
         <td>
           <p>Igual a</p>
         </td>
         <td>
-          <p>=A1=B1</p>
+          <p>$=A1=B1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>&gt; (signo mayor que)</p>
+          <center><h6 class="title"> $>$ </h6></center>
         </td>
         <td>
           <p>Mayor que</p>
         </td>
         <td>
-          <p>=A1&gt;B1</p>
+          <p>$=A1 >B1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>&lt; (signo menor que)</p>
+          <center><h6 class="title">$ < $ </h6></center>
         </td>
         <td>
           <p>Menor que</p>
         </td>
         <td>
-          <p>=A1&lt;B1</p>
+          <p>$=A1 < B1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>&gt;= (signo mayor o igual que)</p>
+          <center><h6 class="title"> $ >=$ </h6></center>
         </td>
         <td>
           <p>Mayor o igual que</p>
         </td>
         <td>
-          <p>=A1&gt;=B1</p>
+          <p>$=A1 >=B1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>&lt;= (signo menor o igual que)</p>
+          <center><h6 class="title"> $<=$ </h6></center>
         </td>
         <td>
           <p>Menor o igual que</p>
         </td>
         <td>
-          <p>=A1&lt;=B1</p>
+          <p>$=A1 <=B1$</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>&lt;&gt; (signo distinto de)</p>
+          <center><h6 class="title">$ \neq $</h6></center>
         </td>
         <td>
           <p>No es igual a</p>
         </td>
         <td>
-          <p>=A1&lt;&gt;B1</p>
+          <p>$=A1 < > B1$</p>
         </td>
       </tr>
     </tbody>
@@ -655,24 +655,24 @@ Negación</p>
 
 
 <h1 class="number-title"> Operadores de concatenación de texto</h1>
-Use la y comercial (&) para unir o concatenar una o más cadenas de texto para generar un único fragmento de texto.
+Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para generar un único fragmento de texto.
 <p>
 <table class="info">
   <thead>
     <tr>
       <th>
         <p>
-          <b class="ocpLegacyBold">Operador de texto</b>
+          <h5 class="title">Operador de texto</h5>
         </p>
       </th>
       <th>
         <p>
-          <b class="ocpLegacyBold">Significado</b>
+          <h5 class="title">Significado</h5>
         </p>
       </th>
       <th>
         <p>
-          <b class="ocpLegacyBold">Ejemplo</b>
+          <h5 class="title">Ejemplo</h5>
         </p>
       </th>
     </tr>
@@ -680,13 +680,13 @@ Use la y comercial (&) para unir o concatenar una o más cadenas de texto para g
   <tbody>
     <tr>
       <td>
-        <p>&amp; (Ampersand )</p>
+        <center><h6 class="title">$\&$</h6></center>
       </td>
       <td>
         <p>Conecta o concatena dos valores para generar un valor de texto continuo.</p>
       </td>
       <td>
-        <p>="North"&amp;"wind"</p>
+        <p>="Administración" $\&$ "Turística"</p>
       </td>
     </tr>
   </tbody>
@@ -702,17 +702,17 @@ Use la y comercial (&) para unir o concatenar una o más cadenas de texto para g
                   <tr>
                     <th>
                       <p>
-                        <b class="ocpLegacyBold">Operador de referencia</b>
+                        <h5 class="title">Operador de referencia</h5>
                       </p>
                     </th>
                     <th>
                       <p>
-                        <b class="ocpLegacyBold">Significado</b>
+                        <h5 class="title">Significado</h5>
                       </p>
                     </th>
                     <th>
                       <p>
-                        <b class="ocpLegacyBold">Ejemplo</b>
+                        <h5 class="title">Ejemplo</h5>
                       </p>
                     </th>
                   </tr>
@@ -720,43 +720,43 @@ Use la y comercial (&) para unir o concatenar una o más cadenas de texto para g
                 <tbody>
                   <tr>
                     <td>
-                      <p>: (dos puntos)</p>
+                      <center><h6 class="title"> $ : $</h6></center>
                     </td>
                     <td>
                       <p>Operador de rango, que genera una referencia a todas las celdas entre dos referencias, estas incluidas</p>
                     </td>
                     <td>
-                      <p>=SUMA(B5:B15)</p>
+                      <p>$=\mathrm{SUMA(B5:B15)}$</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>. (punto)</p>
+                      <center><h6 class="title"> $ . $</h6></center>
                     </td>
                     <td>
                       <p>Operador de unión, que combina varias referencias en una sola.</p>
                     </td>
                     <td>
-                      <p>=SUMA(B5:B15;D5:D15)</p>
+                      <p>$=\mathrm{SUMA(B5:B15.D5:D15)}$</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>(espacio)</p>
+                      <center><h6 class="title"> (espacio)</h6></center>
                     </td>
                     <td>
                       <p>Operador de intersección, que genera una referencia a las celdas comunes a las dos referencias.</p>
                     </td>
                     <td>
-                      <p>=SUMA(B7:D7 C6:C8)</p>
+                      <p>$=\mathrm{SUMA(B7:D7 C6:C8)}$</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p># (Amohadilla)</p>
+                      <center><h6 class="title"> $\#$ </h6></center>
                     </td>
                     <td>
-                      <p>El símbolo # se usa en varios contextos:</p>
+                      <p>El símbolo $\#$ se usa en varios contextos:</p>
                       <ul>
                   <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                           <p>Se usa como parte de un nombre de error.</p>
@@ -777,16 +777,17 @@ Use la y comercial (&) para unir o concatenar una o más cadenas de texto para g
                       <p></p>
                       <ul>
                   <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                          <p>#¡VALOR!</p>
+                          <p>$\mathrm{\#¡VALOR!}$</p>
                         <meta itemprop="position" content="1">
                   </li>
                   <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                          <p>#####</p>
-                          <p></p>
+                          <p>$\mathrm{\#\#\#\#\#}$</p>
+                          
                         <meta itemprop="position" content="2">
                   </li>
                   <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                          <p>=SUMA(A2#)</p>
+                          <p>$\mathrm{=SUMA(A2\#)}$
+                          </p>
                         <meta itemprop="position" content="3">
                   </li>
                 </ul>
