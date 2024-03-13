@@ -444,7 +444,7 @@
 
 
     <button class="respButton"><h1 class="tema-number-title"> Operadores en Excel</h1> </button>
-    <div class="resp-box flexbox">
+    <!-- <div class="resp-box flexbox"> -->
 
 
  <p>Los operadores especifican el tipo de cálculo que desea realizar en los 
@@ -723,7 +723,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                       <center><h6 class="title"> $ : $</h6></center>
                     </td>
                     <td>
-                      <p>Operador de rango, que genera una referencia a todas las celdas entre dos referencias, estas incluidas</p>
+                      <p><b>Operador de rango</b>, que genera una referencia a todas las celdas entre dos referencias, estas incluidas</p>
                     </td>
                     <td>
                       <p>$=\mathrm{SUMA(B5:B15)}$</p>
@@ -734,7 +734,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                       <center><h6 class="title"> $ , $</h6></center>
                     </td>
                     <td>
-                      <p>Operador de unión, que combina varias referencias en una sola.</p>
+                      <p><b>Operador de unión</b>, que combina varias referencias en una sola.</p>
                     </td>
                     <td>
                       <p>$=\mathrm{SUMA(B5:B15,D5:D15)}$</p>
@@ -745,10 +745,10 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                       <center><h6 class="title"> (espacio)</h6></center>
                     </td>
                     <td>
-                      <p>Operador de intersección, que genera una referencia a las celdas comunes a las dos referencias.</p>
+                      <p><b>Operador de intersección</b>, que genera una referencia a las celdas comunes a las dos referencias.</p>
                     </td>
                     <td>
-                      <p>$=\mathrm{SUMA(B7:D7 C6:C8)}$</p>
+                      <p>$=\mathrm{SUMA(B7:D7\,\, C6:C8)}$</p>
                     </td>
                   </tr>
                   <tr>
@@ -766,11 +766,11 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                           <p>Se usa para indicar que no hay suficiente espacio para representar. En la mayoría de los casos, puede ampliar la columna hasta que el contenido se muestre correctamente.</p>
                         <meta itemprop="position" content="2">
                   </li>
-                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <!-- <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                           <p>Operador de rango desbordado, que se usa para hacer referencia a un rango completo en una 
                             fórmula de matriz dinámica.</p>
                         <meta itemprop="position" content="3">
-                  </li>
+                  </li> -->
                 </ul>
                     </td>
                     <td>
@@ -785,26 +785,26 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                           
                         <meta itemprop="position" content="2">
                   </li>
-                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <!-- <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                           <p>$\mathrm{=SUMA(A2\#)}$
                           </p>
                         <meta itemprop="position" content="3">
-                  </li>
+                  </li> -->
                 </ul>
                     </td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td>
                       <center><h5 class="title">@</h5></center>
                     </td>
                     <td>
-                      <p>Operador de referencia, que se usa para indicar una intersección implícita en una fórmula. </p>
+                      <p>Operador de referencia que se usa para indicar una intersección implícita en una fórmula. </p>
                     </td>
                     <td>
                       <p>$=\text{@}\mathrm{A1:A10}$</p>
                     
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </p>
@@ -816,21 +816,15 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
 <h1 class="number-title"> Jerarquía de operaciones en Excel </h1>
 
 
-  <p>Si se combinan varios operadores en una única fórmula, Excel ejecutará las operaciones en el orden que se indica en la 
-    siguiente tabla. Si una fórmula contiene operadores con la misma prioridad (por ejemplo, si una fórmula contiene un
-     operador de multiplicación y otro de división), Excel evaluará los operadores de izquierda a derecha.</p>
+  <p> Las fórmulas de Excel siempre comienzan por un signo igual $(=)$. El signo igual indica a Excel que los caracteres siguientes constituyen una fórmula. Después de este signo igual, puede haber una serie de elementos que se van a calcular (los operandos), que están separados por operadores de cálculo. Excel calcula la fórmula de izquierda a derecha, según el orden específico de cada operador de la fórmula. Excel ejecutará las operaciones en el orden que se indica en la 
+  siguiente tabla. Si una fórmula contiene operadores con la misma prioridad (por ejemplo, si una fórmula contiene un
+  operador de multiplicación y otro de división), Excel evaluará los operadores de izquierda a derecha.</p>
   
   
-<p>En algunos casos, el orden en el que se realiza el cálculo puede afectar al valor devuelto de la fórmula,
-   por lo que es importante comprender el orden y cómo puede cambiar el orden para obtener los resultados que espera ver.</p>
 
 
-<h2 class="number-title"> Orden de calculo</h2>
+<!-- <h2 class="number-title"> Orden de calculo</h2> -->
 
-<p>Las fórmulas calculan los valores en un orden específico. Las fórmulas de Excel siempre comienzan por un signo igual (=). 
-  El signo igual indica a Excel que los caracteres siguientes constituyen una fórmula. Después de este signo igual, 
-  puede haber una serie de elementos que se van a calcular (los operandos), que están separados por operadores de cálculo.
-   Excel calcula la fórmula de izquierda a derecha, según el orden específico de cada operador de la fórmula.</p>
 
    <table class="banded">
     <thead>
@@ -921,71 +915,80 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
     </tbody>
   </table>
 
-<h2 class="number-title"> Uso de paréntesis</h2>
+    <h2 class="number-title"> Uso de paréntesis</h2>
+      <p>En algunos casos, el orden en el que se realiza el cálculo puede afectar al valor devuelto de la fórmula,
+      por lo que es importante comprender el orden y cómo puede cambiar el orden para obtener los resultados que espera ver.
+      Para cambiar el orden de evaluación, escriba entre paréntesis la parte de la fórmula que se calculará en primer lugar. 
+      </p>
 
-<p>
-Para cambiar el orden de evaluación, escriba entre paréntesis la parte de la fórmula que se calculará en primer lugar. 
-Por ejemplo, la siguiente fórmula da como resultado el valor de 11, porque Excel calcula la multiplicación antes que
-la suma. La fórmula multiplica primero 2 por 3 y después suma 5 al resultado.
-</p>
-<center><h6 class="title">=5+2*3
-</center>
+    <h3 class="title">Ejemplo</h3>
+      <p>La siguiente fórmula da como resultado el valor de $11$, porque Excel calcula la multiplicación antes que
+        la suma. La fórmula multiplica primero $2$ por $3$ y después suma $5$ al resultado.
+      </p>
+      <p>
+      <center><h5 class="title">$=5+2*3$</h5> </center>
+      </p>
 
-<p>
-Por el contrario, si usa paréntesis para cambiar la sintaxis, Excel suma 5 y 2 y, a continuación, multiplica el resultado
-por 3 para producir 21.
-</p>
-<center><h6 class="title">$=(5+2)*3$</h6></center>
-</center>
+      <p>
+      Por el contrario, si usa paréntesis para cambiar la sintaxis, Excel suma $5$ y $2$ y, a continuación, multiplica el resultado
+      por $3$ para producir $21$.
+      </p>
+      <p>
+        <center><h5 class="title">$=(5+2)*3$</h5></center>
+      </p>
 
-<p>
-En el ejemplo siguiente, los paréntesis que encierran la primera parte de la fórmula obligarán a Excel a calcular
- B4+25 en primer lugar y, a continuación, dividirá el resultado por la suma de los valores de las celdas D5, E5 y F5.
-</p>
-
-<center><h6 class="title">=(B4+25)/SUMA(D5:F5)</h6></center>
+  <h3 class="title">Ejemplo</h3>
+      <p>
+      Los paréntesis que encierran la primera parte de la fórmula obligarán a Excel a calcular $\mathrm{B4+25}$ en primer lugar y, a continuación, dividirá el resultado por la suma de los valores de las celdas $\mathrm{D5, E5}$ y $\mathrm{F5}.$
+      </p>
+      <p>
+       <center><h5 class="title">$=\mathrm{(B4+25)/SUMA(D5:F5)}$</h5></center>
+      </p>
 
   
 <h1 class="number-title"> Observación</h1>
 
 
-   <p>Al escribir una fórmula, Excel espera tipos específicos de valores para cada operador. Si escribe un tipo de valor
+   <p>Al escribir una fórmula, <b>Excel espera tipos específicos de valores para cada operador</b>. Si escribe un tipo de valor
     diferente del esperado, Excel puede convertir el valor de las fórmulas  de la siguiente manera:
    </p>
    <p>
    <table class="banded">
-    <tbody>
+    <thead>
       <tr>
-        <td>
+        <th>
           <p>
-            <b class="ocpLegacyBold">La fórmula </b>
+            <h5 class="title">La fórmula </h5>
           </p>
-        </td>
-        <td>
+        </th>
+        <th>
           <p>
-            <b class="ocpLegacyBold">Produce</b>
+            <h5 class="title">Produce</h5>
           </p>
-        </td>
-        <td>
+        </th>
+        <th>
           <p>
-            <b class="ocpLegacyBold">Explicación </b>
+            <h5 class="title">Explicación</h5>
           </p>
-        </td>
+        </th>
       </tr>
+    </thead>
+    <tbody>
+      
       <tr>
         <td>
-          <p>= "1"+"2"</p>
+          <h6 class="title">$ =$ "1" + "2"</h6>
         </td>
         <td>
           <p>3</p>
         </td>
         <td>
-          <p>Al usar un signo más (+), Excel espera números en la fórmula. Aunque las comillas significan que "1" y "2" son valores de texto, Excel convierte automáticamente los valores de texto en números.</p>
+          <p>Al usar un signo más $(+)$, Excel espera números en la fórmula. Aunque las comillas significan que "1" y "2" son valores de texto, Excel convierte automáticamente los valores de texto en números.</p>
         </td>
       </tr>
       <tr>
         <td>
-          <p>= 1+"$4,00"</p>
+          <h6 class="title">$ =$ 1 +"$4.00"</h6>
         </td>
         <td>
           <p>5</p>
@@ -996,7 +999,7 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
       </tr>
       <tr>
         <td>
-          <p>= "1/6/2001"-"1/5/2001"</p>
+          <h6 class="title">$ = $ "1/6/2001"-"1/5/2001"</h6>
         </td>
         <td>
           <p>31</p>
@@ -1007,7 +1010,7 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
       </tr>
       <tr>
         <td>
-          <p>=RAIZ ("8+1")</p>
+          <h6 class="title">$ = $ \mathrm{RAIZ} ("8+1")</h6>
         </td>
         <td>
           <p>#¡VALOR!</p>
@@ -1018,7 +1021,7 @@ En el ejemplo siguiente, los paréntesis que encierran la primera parte de la f�
       </tr>
       <tr>
         <td>
-          <p>= "A"&amp;VERDADERO</p>
+          <h6 class="title">= "A" $\mathrm{\&}$ VERDADERO</h6>
         </td>
         <td>
           <p>ATRUE</p>
