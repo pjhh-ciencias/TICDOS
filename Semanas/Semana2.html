@@ -816,11 +816,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
 <h1 class="number-title"> Jerarquía de operaciones en Excel </h1>
 
 
-  <p> Las fórmulas de Excel siempre comienzan por un signo igual $(=)$. El signo igual indica a Excel que los caracteres siguientes constituyen una fórmula. Después de este signo igual, puede haber una serie de elementos que se van a calcular (los opeALEATORIOos), que están separados por operadores de cálculo. Excel calcula la fórmula de izquierda a derecha, según el orden específico de cada operador de la fórmula. Excel ejecutará las operaciones en el orden que se indica en la 
-  siguiente tabla. Si una fórmula contiene operadores con la misma prioridad (por ejemplo, si una fórmula contiene un
-  operador de multiplicación y otro de división), Excel evaluará los operadores de izquierda a derecha.</p>
-  
-  
+  <p> Las fórmulas de Excel siempre comienzan por un signo igual $(=)$. El signo igual indica a Excel que los caracteres siguientes constituyen una fórmula. Después de este signo igual, puede haber una serie de elementos que se van a calcular (los operandos), que están separados por operadores de cálculo. <b>Excel calcula la fórmula de izquierda a derecha</b>, según el orden específico de cada operador de la fórmula. Si una fórmula contiene operadores con la misma prioridad (por ejemplo, si una fórmula contiene un  operador de multiplicación y otro de división), Excel evaluará los operadores de izquierda a derecha. Excel ejecutará las operaciones en el orden que se indica en la siguiente tabla. </p>
 
 
 <!-- <h2 class="number-title"> Orden de calculo</h2> -->
@@ -949,9 +945,9 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
 <h1 class="number-title"> Observaciones</h1>
 
 
-   <p>Al escribir una fórmula, <b>Excel espera tipos específicos de valores para cada operador</b>. Si escribe un tipo de valor
-    diferente del esperado, Excel puede convertir el valor de las fórmulas  de la siguiente manera:
+   <p>Al escribir una fórmula <b>directamente en una celda</b>, Excel espera tipos específicos de valores para cada operador. Si escribe un tipo de valor diferente del esperado, Excel puede convertir el valor de las fórmulas  de la siguiente manera:
    </p>
+   
    <p>
    <table class="banded">
     <thead>
@@ -997,7 +993,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
           <p>Cuando una fórmula espera un número, Excel convierte texto si está en un formato que normalmente se aceptaría para un número.</p>
         </td>
       </tr>
-      <!-- <tr>
+      <tr>
         <td>
           <h6 class="title">$ = $ "$1/6/2001$"-"$1/5/2001$"</h6>
         </td>
@@ -1007,7 +1003,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
         <td>
           <p>Excel interpreta el texto como una fecha en formato mm/dd/aaaa, convierte las fechas en números de serie y luego calcula la diferencia entre ellas.</p>
         </td>
-      </tr> -->
+      </tr>
       <tr>
         <td>
           <h6 class="title">$ = \mathrm{RAIZ}$ ("8+1")</h6>
