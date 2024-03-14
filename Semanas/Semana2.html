@@ -980,7 +980,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
           <h6 class="title">$ =$ "1" + "2"</h6>
         </td>
         <td>
-          <p>3</p>
+          <p>$3$</p>
         </td>
         <td>
           <p>Al usar un signo más $(+)$, Excel espera números en la fórmula. Aunque las comillas significan que "1" y "2" son valores de texto, Excel convierte automáticamente los valores de texto en números.</p>
@@ -991,7 +991,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
           <h6 class="title">$ =$ 1 +"$4.00"</h6>
         </td>
         <td>
-          <p>5</p>
+          <p>$5$</p>
         </td>
         <td>
           <p>Cuando una fórmula espera un número, Excel convierte texto si está en un formato que normalmente se aceptaría para un número.</p>
@@ -999,10 +999,10 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
       </tr>
       <tr>
         <td>
-          <h6 class="title">$ = $ "1/6/2001"-"1/5/2001"</h6>
+          <h6 class="title">$ = $ "$1/6/2001$"-"$1/5/2001$"</h6>
         </td>
         <td>
-          <p>31</p>
+          <p>$31$</p>
         </td>
         <td>
           <p>Excel interpreta el texto como una fecha en formato mm/dd/aaaa, convierte las fechas en números de serie y luego calcula la diferencia entre ellas.</p>
@@ -1013,10 +1013,10 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
           <h6 class="title">$ = $ \mathrm{RAIZ} ("8+1")</h6>
         </td>
         <td>
-          <p>#¡VALOR!</p>
+          <p>$\mathrm{\#¡VALOR!}$</p>
         </td>
         <td>
-          <p>Excel no se puede convertir el texto en un número porque el texto "8+1" no se puede convertir en número. Puede usar "9" o "8"+"1" en lugar de "8+1" para convertir el texto en un número y devolver el resultado de 3.</p>
+          <p>Excel no se puede convertir el texto en un número porque el texto "8+1" no se puede convertir en número. Puede usar "9" o "8"+"1" en lugar de "8+1" para convertir el texto en un número y devolver el resultado de $3$.</p>
         </td>
       </tr>
       <tr>
@@ -1024,7 +1024,7 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
           <h6 class="title">= "A" $\mathrm{\&}$ VERDADERO</h6>
         </td>
         <td>
-          <p>ATRUE</p>
+          <p>$\mathrm{ATRUE}$</p>
         </td>
         <td>
           <p>Cuando se espera texto, Excel convierte números y valores lógicos como VERDADERO y FALSO en texto.</p>
