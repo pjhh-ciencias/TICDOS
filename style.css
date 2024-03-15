@@ -1135,7 +1135,7 @@ transform: scale(1.1);
 
 .tabla-funciones {
   /* font-family: arial, sans-serif; */
-  /* font-size: 80%; */
+  font-size: 95%;
   font-style: normal;
   font-weight: 400;
   /* padding: 0%; */
@@ -1151,7 +1151,7 @@ transform: scale(1.1);
   /* color: rgb(0, 77, 179); */
   color: rgb(0, 0, 0); 
   text-align: left;
-  display: inline;
+  /* display: inline; */
   border-collapse: collapse;
   width: 100%;
 }
@@ -1176,6 +1176,7 @@ transform: scale(1.1);
   /* color: rgb(0, 77, 179); */
   color: rgb(0, 0, 0); 
   text-align: center;
+  border-collapse: collapse;
   /* width: 100%; */
   /* display: inline; */
  }
