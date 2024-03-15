@@ -329,7 +329,7 @@
           Inicio. Si lo pulsamos directamente, inserta la función <b>SUMA</b>, pero
           si hacemos un clic en la flecha de la derecha para desplegar el
           menú, podemos elegir otras funciones, como <b>PROMEDIO</b>, <b>CONTAR</b>,
-          <b>MÁXIMO</b> y <b>MÍNIMO</b>, o también acceder a la <b>ventana Insertar
+          <b>MAX</b> y <b>MIN</b>, o también acceder a la <b>ventana Insertar
             función</b>, si
           seleccionamos la opción <b>Más funciones</b>....</p>
 
@@ -1030,15 +1030,15 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
               </tr>
               <tr>
                 <td class="nombre-funcion">MÁXIMO</td>
-                  <td>MÁXIMO(número1, [número2], ...)</td>
+                  <td>MAX(número1, [número2], ...)</td>
                   <td>Devuelve el valor máximo de los números dados como argumentos.</td>
-                  <td> =           MÁXIMO(A1:A10)</td>
+                  <td> = MAX(A1:A10)</td>
               </tr>
               <tr>
                 <td class="nombre-funcion">MÍNIMO</td>
-                  <td>MÍNIMO(número1, [número2], ...)</td>
+                  <td>MIN(número1, [número2], ...)</td>
                   <td>Devuelve el valor mínimo de los números dados como argumentos.</td>
-                  <td> =           MÍNIMO(A1:A10)</td>
+                  <td> = MIN(A1:A10)</td>
               </tr>
               <tr>
                 <td class="nombre-funcion">RAÍZ</td>
@@ -1052,6 +1052,12 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                   <td>Devuelve el valor de Pi (3.14159265358979).</td>
                   <td> =           PI()</td>
               </tr>
+              <tr>
+                <td class="nombre-funcion">RADIANES</td>
+                <td>RADIANES(ángulo)</td>
+                <td>Convierte un ángulo expresado en  grados a radianes.</td>
+                <td>= RADIANES(270)</td>
+            </tr>
               <tr>
                   <td class="nombre-funcion">COS</td>
                   <td>COS(número)</td>
@@ -1078,10 +1084,16 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
               </tr>
               <tr>
                   <td class="nombre-funcion">LOGARITMO</td>
-                  <td>LOGARITMO(número, [base])</td>
-                  <td>Devuelve el logaritmo de un número en una base dada. Si no se especifica la base, se utiliza el logaritmo natural (base e).</td>
-                  <td> =           LOGARITMO(A1, 10)</td>
+                  <td>LOG(número, [base])</td>
+                  <td>Devuelve el logaritmo de un número en una base dada. Si no se especifica la base, se utiliza el logaritmo base 10.</td>
+                  <td> = LOG(A1, 2)</td>
               </tr>
+              <tr>
+                <td class="nombre-funcion">LOGARITMO BASE 10</td>
+                <td>LOG10(número)</td>
+                <td>Devuelve el logaritmo de un número en  la base 10</td>
+                <td> =           LOG10(A1, 10)</td>
+            </tr>
               <tr>
                   <td class="nombre-funcion">EXP</td>
                   <td>EXP(número)</td>
@@ -1089,20 +1101,20 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
                   <td> =           EXP(A1)</td>
               </tr>
               <tr>
-                <td>REDONDEAR</td>
-                <td>REDONDEAR(número, [núm_decimales])</td>
+                <td class="nombre-funcion">REDONDEAR</td>
+                <td>REDONDEAR(número, núm_decimales)</td>
                 <td>Redondea un número al entero más cercano o al múltiplo más cercano de núm_decimales.</td>
                 <td> =           REDONDEAR(A1, 2)</td>
             </tr>
               <tr>
                   <td class="nombre-funcion">REDONDEAR.MENOS</td>
-                  <td>REDONDEAR.MENOS(número, [núm_decimales])</td>
+                  <td>REDONDEAR.MENOS(número, núm_decimales)</td>
                   <td>Redondea un número hacia abajo, hacia el entero más cercano o hacia el múltiplo más cercano de núm_decimales.</td>
                   <td> =           REDONDEAR.MENOS(A1, 2)</td>
               </tr>
               <tr>
                   <td class="nombre-funcion">REDONDEAR.MÁS</td>
-                  <td>REDONDEAR.MÁS(número, [núm_decimales])</td>
+                  <td>REDONDEAR.MÁS(número, núm_decimales)</td>
                   <td>Redondea un número hacia arriba, hacia el entero más cercano o hacia el múltiplo más cercano de núm_decimales.</td>
                   <td> =           REDONDEAR.MÁS(A1, 2)</td>
               </tr>
