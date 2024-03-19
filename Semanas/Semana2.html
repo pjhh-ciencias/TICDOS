@@ -218,7 +218,7 @@
   <!-- <tr>
     <td><strong>#¡N/A!</strong></td>
     <td>Indica que el valor no está disponible</td>
-    <td> =           VLOOKUP("apple", A1:B10, 3, FALSE) (si "apple" no se encuentra en el rango de búsqueda)</td>
+    <td> =           VLOOKUP("apple", A1:B10, 3, FALSO) (si "apple" no se encuentra en el rango de búsqueda)</td>
   </tr> -->
 </table>   <br>
       </p>
@@ -1192,69 +1192,69 @@ Use el símbolo $\&$ para unir o concatenar una o más cadenas de texto para gen
         <tbody>
             <tr>
                 <td class="nombre-funcion">AND</td>
-                <td>AND(logical1, [logical2], ...)</td>
+                <td>Y(Proposición1, [Proposición2], ...)</td>
                 <td>Devuelve VERDADERO si todos los argumentos son VERDADERO.</td>
-                <td> =           AND(TRUE, FALSE)</td>
+                <td> = Y (VERDADERO, FALSO)</td>
             </tr>
             <tr>
               <td class="nombre-funcion">OR</td>
-                <td>OR(logical1, [logical2], ...)</td>
+                <td>O(Proposición1, [Proposición2], ...)</td>
                 <td>Devuelve VERDADERO si al menos uno de los argumentos es VERDADERO.</td>
-                <td> =           OR(TRUE, FALSE)</td>
+                <td> = O(VERDADERO, FALSO)</td>
             </tr>
             <tr>
               <td class="nombre-funcion">NOT</td>
-                <td>NOT(logical)</td>
+                <td>NO(Proposición)</td>
                 <td>Invierte el valor lógico del argumento: VERDADERO se convierte en FALSO, y viceversa.</td>
-                <td> =           NOT(TRUE)</td>
+                <td> =           NOT(VERDADERO)</td>
             </tr>
             <!-- <tr>
                   <td class="nombre-funcion">XOR</td>
-                <td>XOR(logical1, [logical2], ...)</td>
+                <td>XOR(Proposición1, [Proposición2], ...)</td>
                 <td>Devuelve VERDADERO si un número impar de argumentos son VERDADEROS.</td>
-                <td> =           XOR(TRUE, FALSE)</td>
+                <td> =           XOR(VERDADERO, FALSO)</td>
             </tr> -->
             <tr>
               <td class="nombre-funcion">IF</td>
-                <td>IF(logical_test, value_if_true, value_if_false)</td>
+                <td>SI (Prueba_lógica, valor_si__VERDADERO, valor_si_FALSO)</td>
                 <td>Devuelve un valor si una condición es verdadera y otro valor si es falsa.</td>
-                <td> =           IF(A1 > 10, "Aprobado", "Reprobado")</td>
+                <td> = SI(A1 > 10, "Aprobado", "Reprobado")</td>
             </tr>
             <tr>
-                <td class="nombre-funcion">IFERROR</td>
-                <td>IFERROR(value, value_if_error)</td>
+                <td class="nombre-funcion">SI.ERROR</td>
+                <td>SI.ERROR(value, value_if_error)</td>
                 <td>Devuelve un valor si una fórmula genera un error y otro valor si no.</td>
-                <td> =           IFERROR(1/0, "Error de división")</td>
+                <td> =           SI.ERROR(1/0, "Error de división")</td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td class="nombre-funcion">IFNA</td>
                 <td>IFNA(value, value_if_na)</td>
                 <td>Devuelve un valor si el resultado de una fórmula es #N/A (no disponible).</td>
-                <td> =           IFNA(VLOOKUP("No existe", A1:A10, 1, FALSE), "No encontrado")</td>
-            </tr>
+                <td> =           IFNA(VLOOKUP("No existe", A1:A10, 1, FALSO), "No encontrado")</td>
+            </tr> -->
             <!-- <tr>
                   <td class="nombre-funcion">IFLOGICAL</td>
-                <td>IFLOGICAL(test, [value_if_true], [value_if_false])</td>
+                <td>IFLOGICAL(test, [value_if_VERDADERO], [value_if_FALSO])</td>
                 <td>Devuelve un valor si la prueba es lógicamente verdadera o falsa.</td>
                 <td> =           IFLOGICAL(A1>10, "Mayor que 10", "Menor o igual que 10")</td>
             </tr> -->
             <tr>
-                <td class="nombre-funcion">SWITCH</td>
-                <td>SWITCH(expression, value1, result1, [default])</td>
+                <td class="nombre-funcion">CAMBIAR</td>
+                <td>CAMBIAR(expression, value1, result1, [default])</td>
                 <td>Evalúa una lista de valores y devuelve el valor correspondiente al primer valor que coincide.</td>
-                <td> =           SWITCH(A1, 1, "Uno", 2, "Dos", 3, "Tres", "Otro")</td>
+                <td> =           CAMBIAR(A1, 1, "Uno", 2, "Dos", 3, "Tres", "Otro")</td>
             </tr>
             <tr>
-                <td class="nombre-funcion">TRUE</td>
-                <td>TRUE()</td>
+                <td class="nombre-funcion">VERDADERO</td>
+                <td>VERDADERO()</td>
                 <td>Devuelve VERDADERO.</td>
-                <td> =           TRUE()</td>
+                <td> =           VERDADERO()</td>
             </tr>
             <tr>
-                <td class="nombre-funcion">FALSE</td>
-                <td>FALSE()</td>
+                <td class="nombre-funcion">FALSO</td>
+                <td>FALSO()</td>
                 <td>Devuelve FALSO.</td>
-                <td> =           FALSE()</td>
+                <td> =           FALSO()</td>
             </tr>
         </tbody>
           </table>
