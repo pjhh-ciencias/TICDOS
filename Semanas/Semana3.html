@@ -315,39 +315,51 @@
             </tr>
         </thead>
         <tbody>
+              <tr>
+                <td class="nombre-funcion">VERDADERO</td>
+                <td>VERDADERO()</td>
+                <td>Devuelve VERDADERO.</td>
+                <td> =           VERDADERO()</td>
+            </tr>
+            <tr>
+                <td class="nombre-funcion">FALSO</td>
+                <td>FALSO()</td>
+                <td>Devuelve FALSO.</td>
+                <td> =           FALSO()</td>
+            </tr>
             <tr>
                 <td class="nombre-funcion">Y</td>
-                <td>Y(Proposición1, [Proposición2], ...)</td>
+                <td>Y(proposición1, [proposición2], ...)</td>
                 <td>Devuelve VERDADERO si todos los argumentos son VERDADERO.</td>
                 <td> = Y (VERDADERO, FALSO)</td>
             </tr>
             <tr>
               <td class="nombre-funcion">O</td>
-                <td>O(Proposición1, [Proposición2], ...)</td>
+                <td>O(proposición1, [proposición2], ...)</td>
                 <td>Devuelve VERDADERO si al menos uno de los argumentos es VERDADERO.</td>
                 <td> = O(VERDADERO, FALSO)</td>
             </tr>
             <tr>
               <td class="nombre-funcion">NO</td>
-                <td>NO(Proposición)</td>
+                <td>NO(proposición)</td>
                 <td>Invierte el valor lógico del argumento: VERDADERO se convierte en FALSO, y viceversa.</td>
                 <td> =           NOT(VERDADERO)</td>
             </tr>
             <!-- <tr>
                   <td class="nombre-funcion">XOR</td>
-                <td>XOR(Proposición1, [Proposición2], ...)</td>
+                <td>XOR(proposición1, [proposición2], ...)</td>
                 <td>Devuelve VERDADERO si un número impar de argumentos son VERDADEROS.</td>
                 <td> =           XOR(VERDADERO, FALSO)</td>
             </tr> -->
             <tr>
               <td class="nombre-funcion">SI</td>
-                <td>SI (Prueba_lógica, valor_si__VERDADERO, valor_si_FALSO)</td>
+                <td>SI (prueba_lógica, valor_si__VERDADERO, valor_si_FALSO)</td>
                 <td>Devuelve un valor si una condición es verdadera y otro valor si es falsa.</td>
                 <td> = SI(A1 > 10, "Aprobado", "Reprobado")</td>
             </tr>
             <tr>
                 <td class="nombre-funcion">SI.ERROR</td>
-                <td>SI.ERROR(value, value_if_error)</td>
+                <td>SI.ERROR(valor, valor_si_error)</td>
                 <td>Devuelve un valor si una fórmula genera un error y otro valor si no.</td>
                 <td> =           SI.ERROR(1/0, "Error de división")</td>
             </tr>
@@ -365,26 +377,26 @@
             </tr> -->
             <tr>
                 <td class="nombre-funcion">CAMBIAR</td>
-                <td>CAMBIAR(expression, value1, result1, [default])</td>
+                <td>CAMBIAR(expresion, valor1, resultado1, [predeterminado_o_valor_dos, resultado2], ...)</td>
                 <td>Evalúa una lista de valores y devuelve el valor correspondiente al primer valor que coincide.</td>
                 <td> =           CAMBIAR(A1, 1, "Uno", 2, "Dos", 3, "Tres", "Otro")</td>
             </tr>
-            <tr>
-                <td class="nombre-funcion">VERDADERO</td>
-                <td>VERDADERO()</td>
-                <td>Devuelve VERDADERO.</td>
-                <td> =           VERDADERO()</td>
-            </tr>
-            <tr>
-                <td class="nombre-funcion">FALSO</td>
-                <td>FALSO()</td>
-                <td>Devuelve FALSO.</td>
-                <td> =           FALSO()</td>
-            </tr>
+            
         </tbody>
           </table>
         </p>
-      </div> 
+    
+
+      <h2 class="number-title">Observaciones</h2>
+
+      <ol>
+        <li>La función <b>Y</b> evalúa varias condiciones y devuelve VERDADERO <b>si todas las condiciones son verdaderas</b>, y FALSO <b>si al menos una de las condiciones es falsa.</b>
+        </li><br>
+        <li>La función <b>O</b> devuelve VERDADERO <b>si al menos una de las condiciones es verdadera</b>, y devuelve FALSO <b>si todas las condiciones son falsas.</b>
+
+        </li>
+      </ol>
+      </div>
 
 
         <button class="respButton hvr-grow "><h1 class="number-title"> Funciones de informaci&oacute;n </h1>  </button>
@@ -418,12 +430,12 @@
                 <td>Devuelve VERDADERO si el valor es lógico.</td>
                 <td> =           ESLOGICO(A1)</td>
             </tr>
-            <tr>
+            <!-- <tr>
                   <td class="nombre-funcion">ESNA</td>
                 <td>ESNA(valor)</td>
                 <td>Devuelve VERDADERO si el valor no es disponible.</td>
                 <td> =           ESNA(A1)</td>
-            </tr>
+            </tr> -->
             <tr>
                   <td class="nombre-funcion">ES.NOD</td>
                 <td>ES.NOD(valor)</td>
@@ -436,12 +448,12 @@
                 <td>Devuelve VERDADERO si el valor es un número.</td>
                 <td> =           ESNUMERO(A1)</td>
             </tr>
-            <tr>
+            <!-- <tr>
                   <td class="nombre-funcion">ES.CERO</td>
                 <td>ES.CERO(valor)</td>
                 <td>Devuelve VERDADERO si el valor es cero.</td>
                 <td> =           ES.CERO(A1)</td>
-            </tr>
+            </tr> -->
             <tr>
                   <td class="nombre-funcion">ES.IMPAR</td>
                 <td>ES.IMPAR(valor)</td>
@@ -467,10 +479,10 @@
                 <td> =           ESTEXTO(A1)</td>
             </tr>
             <tr>
-                  <td class="nombre-funcion">LONGITUD</td>
-                <td>LONGITUD(texto)</td>
+                  <td class="nombre-funcion">LARGO</td>
+                <td>LARGO(texto)</td>
                 <td>Devuelve el número de caracteres en una cadena de texto.</td>
-                <td> =           LONGITUD(A1)</td>
+                <td> =           LARGO(A1)</td>
             </tr>
             <tr>
                   <td class="nombre-funcion">MINUSC</td>
@@ -484,24 +496,24 @@
                 <td>Convierte todos los caracteres de un texto en mayúsculas.</td>
                 <td> =           MAYUSC(A1)</td>
             </tr>
-            <tr>
+            <!-- <tr>
                   <td class="nombre-funcion">NUM.DE.CARACTERES</td>
                 <td>NUM.DE.CARACTERES(valor)</td>
                 <td>Devuelve el número de caracteres en un valor.</td>
                 <td> =           NUM.DE.CARACTERES(A1)</td>
-            </tr>
+            </tr> -->
             <tr>
                   <td class="nombre-funcion">TIPO</td>
                 <td>TIPO(valor)</td>
                 <td>Devuelve el tipo de valor.</td>
                 <td> =           TIPO(A1)</td>
             </tr>
-            <tr>
+            <!-- <tr>
                   <td class="nombre-funcion">VALOR</td>
                 <td>VALOR(texto)</td>
                 <td>Convierte un texto que parece un número en un número.</td>
                 <td> =           VALOR(A1)</td>
-            </tr>
+            </tr> -->
             <tr>
                   <td class="nombre-funcion">VALOR.ERROR</td>
                 <td>VALOR.ERROR(valor, [valor_si_error])</td>
@@ -509,7 +521,7 @@
                 <td> =           VALOR.ERROR(A1, "Error")</td>
             </tr>
             <tr>
-                  <td class="nombre-funcion">CELDA</td>
+                  <td class="nombre-funcion"> <a href="https://support.microsoft.com/es-es/office/funci%C3%B3n-celda-51bd39a5-f338-4dbe-a33f-955d67c2b2cf" target="_blank">CELDA</a></td>
                 <td>CELDA(información_tipo, [referencia])</td>
                 <td>Devuelve información sobre la celda especificada.</td>
                 <td> =           CELDA("contenido", A1)</td>
@@ -517,6 +529,84 @@
         </tbody>
           </table>
         </p>
+
+        <h2 class="number-title">Observaciones</h2>
+        <p>
+          <ol>
+            <li>En el caso de la función <b>TIPO</b>
+            <p>
+              <table aria-label="" class="tabla-funciones">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">Si valor es</b>
+                      </p>
+                    </th>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">TIPO devuelve</b>
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>Número</p>
+                    </td>
+                    <td>
+                      <p>1</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Texto</p>
+                    </td>
+                    <td>
+                      <p>2</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Un valor lógico</p>
+                    </td>
+                    <td>
+                      <p>4</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Un valor de error</p>
+                    </td>
+                    <td>
+                      <p>16</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Matriz</p>
+                    </td>
+                    <td>
+                      <p>64</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Datos compuestos</p>
+                    </td>
+                    <td>
+                      <p>128</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+             </p>
+              <p>No puede usar TIPO para determinar si una celda contiene una fórmula. TIPO solo determina el tipo del valor resultante o mostrado. Si el valor es una referencia a una celda que contiene una fórmula, TIPO devuelve el tipo del valor resultante de la fórmula.
+            </p>
+          </li><br>
+        </ol>
+      </p>
       </div>
  
   </div>

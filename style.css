@@ -1161,6 +1161,19 @@ transform: scale(1.1);
 }
 
 
+.nombre-funcion a{ 
+  padding: 10px;
+  font-weight: 500;
+  /*color:  rgba(14, 137, 253, 0.801);*/
+  color:  rgb(255, 0, 0); 
+
+}
+
+.nombre-funcion a:visited{
+  color:  rgb(0, 0, 139); 
+  /* color:  rgba(14, 137, 253, 0.801); */
+}
+
 .tabla-funciones thead{
   font-size: 125%;
   /* font-weight: 600; */
