@@ -522,7 +522,7 @@
             </tr> -->
             <tr>
                   <td class="nombre-funcion"> <a href="https://support.microsoft.com/es-es/office/funci%C3%B3n-celda-51bd39a5-f338-4dbe-a33f-955d67c2b2cf" target="_blank">CELDA</a></td>
-                <td>CELDA(información_tipo, [referencia])</td>
+                <td>CELDA(tipo_información, [referencia])</td>
                 <td>Devuelve información sobre la celda especificada.</td>
                 <td> =           CELDA("contenido", A1)</td>
             </tr>
@@ -605,27 +605,111 @@
               <p>No puede usar TIPO para determinar si una celda contiene una fórmula. TIPO solo determina el tipo del valor resultante o mostrado. Si el valor es una referencia a una celda que contiene una fórmula, TIPO devuelve el tipo del valor resultante de la fórmula.
             </p>
           </li><br>
-        </ol>
-      </p>
+        <li>Para la la función <b>CELDA</b>, el argumento  tipo_información  puede ser uno de los siguientes valores:<br>
+        <p>
 
-      <P>
-        <code>tipo_información</code> puede ser uno de los siguientes valores:<br>
-        <ul>
-          <li>
+          <table aria-label="" class="tabla-funciones">
+            <thead>
+              <tr>
+                <th>
+                  <p>
+                    <b class="ocpLegacyBold">tipo_información</b>
+                  </p>
+                </th>
+                <th>
+                  <p>
+                    <b class="ocpLegacyBold">CELDA devuelve</b>
+                  </p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"dirección"</p>
+                </td>
+                <td>
+                  <p>Muestra una referencia absoluta como texto sin formato de la celda superior izquierda de  referencia .</p>
+                </td>
+              </tr>
+              
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"columna"</p>
+                </td>
+                <td>
+                  <p>Muestra el número de columna de la celda de referencia</p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"color"</p>
+                </td>
+                <td>
+                  <p>Muestra 1 si la celda superior izquierda de  referencia  tiene un formato rojo para los valores negativos. Por ejemplo, cuando el formato de número personalizado es #,##0_);[Red](#,##0), de lo contrario, muestra 0.
+                  </p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"contenido"</p>
+                </td>
+                <td>
+                  <p>Muestra el valor que aparece en la celda superior izquierda de referencia.</p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"prefijo"</p>
+                </td>
+                <td>
+                  <p>Muestra un valor de texto basado en la alineación horizontal del texto en la celda de  referencia . Las comillas simples (') se utilizan para el texto alineado a la izquierda, las comillas dobles (") para el texto alineado a la derecha, el signo de intercalación (^) para el texto centrado y, para todo lo demás, se deja el espacio vacío.
+                  </p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"fila"</p>
+                </td>
+                <td>
+                  <p>Muestra el número de fila de la celda superior izquierda de referencia.</p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"tipo"</p>
+                </td>
+                <td>
+                  <p>Muestra el tipo de datos de la celda de  referencia . Se muestran los siguientes valores: "b" para las celdas vacías, "l" (por "label", que significa "etiqueta" en inglés) para las celdas que contienen texto sin formato y "v" (por valor) para las celdas que contienen cualquier otro tipo de dato.
+                  </p>
+                </td>
+              </tr>
+               <tr>
+                <td class="nombre-funcion">
+                  <p>"ancho"</p>
+                </td>
+                <td>
+                  <p>Muestra el ancho de la columna en términos de la cantidad de caracteres que pueden caber en la celda de  referencia . El número que se muestra se determina en función del ancho del carácter cero (0) en el tamaño de fuente predeterminado. Ten en cuenta que este ancho es diferente al ancho de celda que utiliza Hojas&nbsp;de&nbsp;cálculo&nbsp;de&nbsp;Google en otros contextos, ya que ese ancho se define en términos de píxeles.</p>
+                </td>
+              </tr>
+            <!-- 
+               <tr>
+                <td class="nombre-funcion">
+                  <p></p>
+                </td>
+                <td>
+                  <p> .</p>
+                </td>
+              </tr>
+ -->
+
+            </tbody>
+          </table>
+
+        </p>
+        </li>
+          </ol>
         
-            <ul>
-              <li>"dirección": Muestra una referencia absoluta como texto sin formato de la celda superior izquierda de <code>referencia</code>.</li>
-              <li>"columna": Muestra el número de columna de la celda de <code>referencia</code>.</li>
-              <li>"color": Muestra 1 si la celda superior izquierda de <code>referencia</code> tiene un formato rojo para los valores negativos. Por ejemplo, cuando el formato de número personalizado es #,##0_);[Red](#,##0), de lo contrario, muestra 0.</li>
-              <li>"contenido": Muestra el valor que aparece en la celda superior izquierda de <code>referencia</code>.</li>
-              <li>"prefijo": Muestra un valor de texto basado en la alineación horizontal del texto en la celda de <code>referencia</code>. Las comillas simples (') se utilizan para el texto alineado a la izquierda, las comillas dobles (") para el texto alineado a la derecha, el signo de intercalación (^) para el texto centrado y, para todo lo demás, se deja el espacio vacío.</li>
-              <li>"fila": Muestra el número de fila de la celda superior izquierda de <code>referencia</code>.</li>
-              <li>"tipo": Muestra el tipo de datos de la celda de <code>referencia</code>. Se muestran los siguientes valores: "b" para las celdas vacías, "l" (por "label", que significa "etiqueta" en inglés) para las celdas que contienen texto sin formato y "v" (por valor) para las celdas que contienen cualquier otro tipo de dato.</li>
-              <li>"ancho": Muestra el ancho de la columna en términos de la cantidad de caracteres que pueden caber en la celda de <code>referencia</code>. El número que se muestra se determina en función del ancho del carácter cero (0) en el tamaño de fuente predeterminado. Ten en cuenta que este ancho es diferente al ancho de celda que utiliza Hojas&nbsp;de&nbsp;cálculo&nbsp;de&nbsp;Google en otros contextos, ya que ese ancho se define en términos de píxeles.</li>
-            </ul>
-          </li>
-        </ul>
-      </P>
       </div>
 
      
