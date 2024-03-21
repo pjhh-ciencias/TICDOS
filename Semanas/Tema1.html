@@ -224,4 +224,74 @@ común.
       </p>
 
 
+
+
+      <button class="respButton hvr-grow "><h1 class="number-title"> Otras funciones de informaci&oacute;n </h1>  </button>
+      <div class="resp-box flexbox">
+      <p>
+        <table class="tabla-funciones">
+          <thead>
+            <tr>
+                <th class="nombre-funcion">Función</th>
+                <th>Sintaxis</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+                  <td class="nombre-funcion">MAX.SI.CONJUNTO</td>
+            <td>=MAX(SI(CONJUNTO(condición1, rango1), rango_a_evaluar))</td>
+            <td>Devuelve el valor máximo de un rango que cumple con múltiples condiciones.</td>
+            <td>= MAX.SI.CONJUNTO(A1:A10,B1:B10, ""=Matemáticas")
+              <!-- Supongamos que tenemos una lista de notas de estudiantes en el rango A1:A10 y queremos encontrar la nota máxima de los estudiantes que aprobaron (nota mayor a 70) y que están en el curso de matemáticas (indicado en el rango B1:B10). La fórmula sería: <br> =MAX(SI(CONJUNTO((A1:A10>70)*(B1:B10="Matemáticas"), A1:A10))) <br> Esta fórmula devuelve la nota máxima de los estudiantes que aprobaron y están en el curso de matemáticas. -->
+            </td>
+          </tr>
+          <tr>
+                  <td class="nombre-funcion">MIN.SI.CONJUNTO</td>
+            <td>=MIN.SI.CONJUNTO(condición1, rango1, rango_a_evaluar)</td>
+            <td>Devuelve el valor mínimo de un rango que cumple con múltiples condiciones.</td>
+            <td> =MIN(SI.CONJUNTO(B1:B10 ="Electrónica"*(A1:A10>0.2), A1:A10)))
+              <!-- Supongamos que tenemos una lista de precios de productos en el rango A1:A10 y queremos encontrar el precio mínimo de los productos que están en la categoría "Electrónica" y que tienen un descuento mayor al 20% (indicado en el rango B1:B10). La fórmula sería: <br> =MIN(SI(CONJUNTO((B1:B10="Electrónica")*(A1:A10>0.2), A1:A10))) <br> Esta fórmula devuelve el precio mínimo de los productos que cumplen con las condiciones especificadas. -->
+            </td>
+          </tr>
+          <tr>
+                  <td class="nombre-funcion">CONTAR.SI</td>
+            <td>=CONTAR.SI(rango, criterio)</td>
+            <td>Cuenta el número de celdas en un rango que cumplen con un determinado criterio.</td>
+            <td>Si tenemos una lista de calificaciones en el rango A1:A10 y queremos contar cuántos estudiantes aprobaron (calificación mayor a 70), la fórmula sería: <br> =CONTAR.SI(A1:A10, ">70") <br> Esta fórmula contará cuántos estudiantes obtuvieron una calificación mayor a 70.</td>
+          </tr>
+          <tr>
+                  <td class="nombre-funcion">CONTAR.SI.CONJUNTO</td>
+            <td>=CONTAR.SI(CONJUNTO(condición1, rango1), criterio)</td>
+            <td>Cuenta el número de celdas en un rango que cumplen con múltiples condiciones.</td>
+            <td>Si tenemos una lista de calificaciones en el rango A1:A10 y queremos contar cuántos estudiantes aprobaron (calificación mayor a 70) y que están en el curso de matemáticas (indicado en el rango B1:B10), la fórmula sería: <br> =CONTAR.SI(CONJUNTO((A1:A10>70)*(B1:B10="Matemáticas"), A1:A10), ">70") <br> Esta fórmula contará cuántos estudiantes aprobaron y están en el curso de matemáticas.</td>
+          </tr>
+          <tr>
+                  <td class="nombre-funcion">PROMEDIO.SI</td>
+            <td>=PROMEDIO.SI(rango, criterio)</td>
+            <td>Calcula el promedio de los valores en un rango que cumplen con un determinado criterio.</td>
+            <td>Supongamos que tenemos una lista de calificaciones en el rango A1:A10 y queremos calcular el promedio de las calificaciones de los estudiantes que aprobaron (calificación mayor a 70). La fórmula sería: <br> =PROMEDIO.SI(A1:A10, ">70") <br> Esta fórmula calculará el promedio de las calificaciones de los estudiantes que obtuvieron una calificación mayor a 70.</td>
+          </tr>
+          <tr>
+                  <td class="nombre-funcion">PROMEDIO.SI.CONJUNTO</td>
+            <td>=PROMEDIO.SI(CONJUNTO(condición1, rango1), criterio)</td>
+            <td>Calcula el promedio de los valores en un rango que cumplen con múltiples condiciones.</td>
+            <td>Supongamos que tenemos una lista de calificaciones en el rango A1:A10 y queremos calcular el promedio de las calificaciones de los estudiantes que aprobaron (calificación mayor a 70) y que están en el curso de matemáticas (indicado en el rango B1:B10). La fórmula sería: <br> =PROMEDIO.SI(CONJUNTO((A1:A10>70)*(B1:B10="Matemáticas"), A1:A10), ">70") <br> Esta fórmula calculará el promedio de las calificaciones de los estudiantes que aprobaron y están en el curso de matemáticas.</td>
+          </tr>
+          <tr>
+            <td class="nombre-funcion">SUMAR.SI</td>
+            <td>SUMAR.SI(rango, criterio, [sumar_rango])</td>
+            <td>Suma los valores en un rango que cumplen con un único criterio.</td>
+            <td> =           SUMAR.SI(A1:A10, ">5")</td>
+        </tr>
+        <tr>
+          <td class="nombre-funcion">SUMAR.SI.CONJUNTO</td>
+            <td>SUMAR.SI.CONJUNTO(rango_criterios1, criterio1, [rango_criterios2, criterio2], ...)</td>
+            <td>Suma los valores en un rango que cumplen con múltiples conjuntos de criterios.</td>
+            <td> =           SUMAR.SI.CONJUNTO(A1:A10, ">5", B1:B10, "<10")</td>
+        </tr>
+        </tbody>
+  </div>
+      
 </body>
