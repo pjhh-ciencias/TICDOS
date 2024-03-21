@@ -33,7 +33,7 @@
     <script>
         MathJax = {
         tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            inlineMath: [['\\(', '\\)']]
             },
         svg: {
             fontCache: 'global'
@@ -521,11 +521,20 @@
                 <td> =           VALOR.ERROR(A1, "Error")</td>
             </tr> -->
             <tr>
-                  <td class="nombre-funcion"> <a href="https://support.microsoft.com/es-es/office/funci%C3%B3n-celda-51bd39a5-f338-4dbe-a33f-955d67c2b2cf" target="_blank">CELDA</a></td>
+              <td class="nombre-funcion"> CELDA</td>
+                  <!-- <td class="nombre-funcion"> <a href="https://support.microsoft.com/es-es/office/funci%C3%B3n-celda-51bd39a5-f338-4dbe-a33f-955d67c2b2cf" target="_blank">CELDA</a></td> -->
                 <td>CELDA(tipo_información, [referencia])</td>
                 <td>Devuelve información sobre la celda especificada.</td>
                 <td> =           CELDA("contenido", A1)</td>
             </tr>
+            <tr>
+              <td class="nombre-funcion"> TIPO.DE.ERROR </td>
+                  <!-- <td class="nombre-funcion"> <a href="https://support.microsoft.com/es-es/office/funci%C3%B3n-celda-51bd39a5-f338-4dbe-a33f-955d67c2b2cf" target="_blank">CELDA</a></td> -->
+                <td>TIPO.DE.ERROR(referencia)</td>
+                <td>Muestra el número correspondiente al valor de error en una referencia.</td>
+                <td> =           CELDA("contenido", A1)</td>
+            </tr>
+
         </tbody>
           </table>
         </p>
@@ -533,66 +542,66 @@
         <h2 class="number-title">Observaciones</h2>
         <p>
           <ol>
-            <li>En el caso de la función <b>TIPO</b>
+            <li>En el caso de la función <b>TIPO.DE.Error</b>
             <p>
               <table aria-label="" class="tabla-funciones">
                 <thead>
                   <tr>
                     <th>
                       <p>
-                        <b class="ocpLegacyBold">Si valor es</b>
+                        <b class="ocpLegacyBold"> Valor</b>
                       </p>
                     </th>
                     <th>
                       <p>
-                        <b class="ocpLegacyBold">TIPO devuelve</b>
+                        <b class="ocpLegacyBold"> Resultado</b>
                       </p>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Número</p>
                     </td>
                     <td>
                       <p>1</p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Texto</p>
                     </td>
                     <td>
                       <p>2</p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Un valor lógico</p>
                     </td>
                     <td>
                       <p>4</p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Un valor de error</p>
                     </td>
                     <td>
                       <p>16</p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Matriz</p>
                     </td>
                     <td>
                       <p>64</p>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
+                   <tr>
+                <td class="nombre-funcion">
                       <p>Datos compuestos</p>
                     </td>
                     <td>
@@ -608,7 +617,7 @@
         <li>Para la la función <b>CELDA</b>, el argumento  tipo_información  puede ser uno de los siguientes valores:<br>
         <p>
 
-          <table aria-label="" class="tabla-funciones">
+          <table  class="tabla-funciones">
             <thead>
               <tr>
                 <th>
@@ -618,7 +627,7 @@
                 </th>
                 <th>
                   <p>
-                    <b class="ocpLegacyBold">CELDA devuelve</b>
+                    <b class="ocpLegacyBold">Resultado</b>
                   </p>
                 </th>
               </tr>
@@ -707,6 +716,295 @@
           </table>
 
         </p>
+        </li><br>
+
+        <li><p><b>Códigos de formato de CELDA</b></p>
+          <p> La siguiente lista describe los valores de texto que devuelve la función CELDA cuando el argumento tipo_de_info es "formato" y el argumento referencia es una celda con formato para números integrados.</p>
+          <p>
+            <table class="collapse">
+              <table class="tabla-funciones">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">Formato</b>
+                      </p>
+                    </th>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">La función CELDA devuelve</b>
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>Estándar</p>
+                    </td>
+                    <td>
+                      <p>"G"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>0</p>
+                    </td>
+                    <td>
+                      <p>"F0"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>#.##0</p>
+                    </td>
+                    <td>
+                      <p>".0"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>0,00</p>
+                    </td>
+                    <td>
+                      <p>"F2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>#.##0,00</p>
+                    </td>
+                    <td>
+                      <p>".2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>$#.##0_);($#.##0)</p>
+                    </td>
+                    <td>
+                      <p>"C0"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>$#.##0;(rojo)-$#.##0</p>
+                    </td>
+                    <td>
+                      <p>"C0-"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>$#.##0,00_);($#.##0,00)</p>
+                    </td>
+                    <td>
+                      <p>"C2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>$#.##0,00;(rojo)-$#.##0,00</p>
+                    </td>
+                    <td>
+                      <p>"C2-"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>0%</p>
+                    </td>
+                    <td>
+                      <p>"P0"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>0,00%</p>
+                    </td>
+                    <td>
+                      <p>"P2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>0,00E+00</p>
+                    </td>
+                    <td>
+                      <p>"C2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p># ?/? o # ??/??</p>
+                    </td>
+                    <td>
+                      <p>"G"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>d/m/aa o d/m/aa h:mm o dd/mm/aa</p>
+                    </td>
+                    <td>
+                      <p>"D4"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>d-mmm-aa o dd-mm-aa</p>
+                    </td>
+                    <td>
+                      <p>"D1"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>d-mmm</p>
+                    </td>
+                    <td>
+                      <p>"D2"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>mmm-aa</p>
+                    </td>
+                    <td>
+                      <p>"D3"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>mm/dd</p>
+                    </td>
+                    <td>
+                      <p>"D5"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>h:mm a.m./p.m.</p>
+                    </td>
+                    <td>
+                      <p>"D7"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>h:mm:ss a.m./p.m.</p>
+                    </td>
+                    <td>
+                      <p>"D6"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>h:mm</p>
+                    </td>
+                    <td>
+                      <p>"D9"</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>h:mm:ss</p>
+                    </td>
+                    <td>
+                      <p>"D8"</p>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+          </p>
+        </li><br>
+
+        <li>
+          <p>En el caso de la función <b>TIPO</b>, muestra los siguientes números para los valores de error correspondientes:</p>
+          <p>
+            <table class="tabla-funciones">
+              <thead>
+                <tr>
+                  <th>
+                    <p>
+                      <b class="ocpLegacyBold">Número</b>
+                    </p>
+                  </th>
+                  <th>
+                    <p>
+                      <b class="ocpLegacyBold">Tipo de error</b>
+                    </p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>1</p>
+                  </td>
+                  <td>
+                    <p>#NULL!</p>
+                  </td>
+                </tr>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>#DIV/0!</p>
+                  </td>
+                </tr>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>3</p>
+                  </td>
+                  <td>
+                    <p>#VALUE!</p>
+                  </td>
+                </tr>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>4</p>
+                  </td>
+                  <td>
+                    <p>#REF!</p>
+                  </td>
+                </tr>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>5</p>
+                  </td>
+                  <td>
+                    <p> #NAME?</p>
+                  </td>
+                </tr>
+                 <tr>
+              <td class="nombre-funcion">
+                    <p>6</p>
+                  </td>
+                  <td>
+                    <p> #NUM!</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="nombre-funcion">
+                        <p>6</p>
+                      </td>
+                      <td>
+                        <p> #N/A</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                            <p>8</p>
+                          </td>
+                          <td>
+                            <p>Para todos los demás errores</p>
+                          </td>
+                        </tr>
+              </tbody>
+            </table>
+          </p>
         </li>
           </ol>
         
