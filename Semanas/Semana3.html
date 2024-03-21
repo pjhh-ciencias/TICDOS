@@ -542,6 +542,407 @@
         <h2 class="number-title">Observaciones</h2>
         <p>
           <ol>
+            <li><p>En el caso de la función <b>TIPO</b>, muestra los siguientes números para los valores de error correspondientes:</p>
+              <p>
+                <table class="tabla-funciones">
+                  <thead>
+                    <tr>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">Número</b>
+                        </p>
+                      </th>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">Tipo de error</b>
+                        </p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <p>#NULL!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>2</p>
+                      </td>
+                      <td>
+                        <p>#DIV/0!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>3</p>
+                      </td>
+                      <td>
+                        <p>#VALUE!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>4</p>
+                      </td>
+                      <td>
+                        <p>#REF!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>5</p>
+                      </td>
+                      <td>
+                        <p> #NAME?</p>
+                      </td>
+                    </tr>
+                    <tr>
+                  <td class="nombre-funcion">
+                        <p>6</p>
+                      </td>
+                      <td>
+                        <p> #NUM!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                            <p>6</p>
+                          </td>
+                          <td>
+                            <p> #N/A</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="nombre-funcion">
+                                <p>8</p>
+                              </td>
+                              <td>
+                                <p>Para todos los demás errores</p>
+                              </td>
+                            </tr>
+                  </tbody>
+                </table>
+              </p>
+            </li>
+
+            <li>Para la la función <b>CELDA</b>, el argumento  tipo_información  puede ser uno de los siguientes valores:<br>
+              <p>
+  
+                <table  class="tabla-funciones">
+                  <thead>
+                    <tr>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">tipo_información</b>
+                        </p>
+                      </th>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">Resultado</b>
+                        </p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"dirección"</p>
+                      </td>
+                      <td>
+                        <p>Muestra una referencia absoluta como texto sin formato de la celda superior izquierda de  referencia .</p>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"columna"</p>
+                      </td>
+                      <td>
+                        <p>Muestra el número de columna de la celda de referencia</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"color"</p>
+                      </td>
+                      <td>
+                        <p>Muestra 1 si la celda superior izquierda de  referencia  tiene un formato rojo para los valores negativos. Por ejemplo, cuando el formato de número personalizado es #,##0_);[Red](#,##0), de lo contrario, muestra 0.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"contenido"</p>
+                      </td>
+                      <td>
+                        <p>Muestra el valor que aparece en la celda superior izquierda de referencia.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"prefijo"</p>
+                      </td>
+                      <td>
+                        <p>Muestra un valor de texto basado en la alineación horizontal del texto en la celda de  referencia . Las comillas simples (') se utilizan para el texto alineado a la izquierda, las comillas dobles (") para el texto alineado a la derecha, el signo de intercalación (^) para el texto centrado y, para todo lo demás, se deja el espacio vacío.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"fila"</p>
+                      </td>
+                      <td>
+                        <p>Muestra el número de fila de la celda superior izquierda de referencia.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"tipo"</p>
+                      </td>
+                      <td>
+                        <p>Muestra el tipo de datos de la celda de  referencia . Se muestran los siguientes valores: "b" para las celdas vacías, "l" (por "label", que significa "etiqueta" en inglés) para las celdas que contienen texto sin formato y "v" (por valor) para las celdas que contienen cualquier otro tipo de dato.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p>"ancho"</p>
+                      </td>
+                      <td>
+                        <p>Muestra el ancho de la columna en términos de la cantidad de caracteres que pueden caber en la celda de  referencia . El número que se muestra se determina en función del ancho del carácter cero (0) en el tamaño de fuente predeterminado. Ten en cuenta que este ancho es diferente al ancho de celda que utiliza Hojas&nbsp;de&nbsp;cálculo&nbsp;de&nbsp;Google en otros contextos, ya que ese ancho se define en términos de píxeles.</p>
+                      </td>
+                    </tr>
+                  <!-- 
+                    <tr>
+                      <td class="nombre-funcion">
+                        <p></p>
+                      </td>
+                      <td>
+                        <p> .</p>
+                      </td>
+                    </tr>
+      -->
+  
+                  </tbody>
+                </table>
+  
+              </p>
+              </li><br>
+  
+              <li><p><b>Códigos de formato de CELDA</b></p>
+            <p> La siguiente lista describe los valores de texto que devuelve la función CELDA cuando el argumento tipo_de_info es "formato" y el argumento referencia es una celda con formato para números integrados.</p>
+            <p>
+              <table class="collapse">
+                <table class="tabla-funciones">
+                  <thead>
+                    <tr>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">Codigo de formato</b>
+                        </p>
+                      </th>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">Descripción</b>
+                        </p>
+                      </th>
+                      <th>
+                        <p>
+                          <b class="ocpLegacyBold">La función CELDA devuelve</b>
+                        </p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>Estándar</p>
+                      </td>
+                      <td>
+                        <p>"G"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>0</p>
+                      </td>
+                      <td>
+                        <p>Muestra un número como un dígito, muestra un cero si no hay valor.</p>
+                      </td>
+                      <td>
+                        <p>"F0"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>#.##0</p>
+                      </td>
+                      <td>
+                        <p>".0"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>0,00</p>
+                      </td>
+                      <td>
+                        <p>"F2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>#.##0,00</p>
+                      </td>
+                      <td>
+                        <p>".2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>$#.##0_);($#.##0)</p>
+                      </td>
+                      <td>
+                        <p>"C0"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>$#.##0;(rojo)-$#.##0</p>
+                      </td>
+                      <td>
+                        <p>"C0-"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>$#.##0,00_);($#.##0,00)</p>
+                      </td>
+                      <td>
+                        <p>"C2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>$#.##0,00;(rojo)-$#.##0,00</p>
+                      </td>
+                      <td>
+                        <p>"C2-"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>0%</p>
+                      </td>
+                      <td>
+                        <p>"P0"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>0,00%</p>
+                      </td>
+                      <td>
+                        <p>"P2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>0,00E+00</p>
+                      </td>
+                      <td>
+                        <p>"C2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p># ?/? o # ??/??</p>
+                      </td>
+                      <td>
+                        <p>"G"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>d/m/aa o d/m/aa h:mm o dd/mm/aa</p>
+                      </td>
+                      <td>
+                        <p>"D4"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>d-mmm-aa o dd-mm-aa</p>
+                      </td>
+                      <td>
+                        <p>"D1"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>d-mmm</p>
+                      </td>
+                      <td>
+                        <p>"D2"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>mmm-aa</p>
+                      </td>
+                      <td>
+                        <p>"D3"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>mm/dd</p>
+                      </td>
+                      <td>
+                        <p>"D5"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>h:mm a.m./p.m.</p>
+                      </td>
+                      <td>
+                        <p>"D7"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>h:mm:ss a.m./p.m.</p>
+                      </td>
+                      <td>
+                        <p>"D6"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>h:mm</p>
+                      </td>
+                      <td>
+                        <p>"D9"</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>h:mm:ss</p>
+                      </td>
+                      <td>
+                        <p>"D8"</p>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </p>
+              </li><br>
+
+
             <li>En el caso de la función <b>TIPO.DE.Error</b>
             <p>
               <table aria-label="" class="tabla-funciones">
@@ -613,399 +1014,11 @@
              </p>
               <p>No puede usar TIPO para determinar si una celda contiene una fórmula. TIPO solo determina el tipo del valor resultante o mostrado. Si el valor es una referencia a una celda que contiene una fórmula, TIPO devuelve el tipo del valor resultante de la fórmula.
             </p>
-          </li><br>
-        <li>Para la la función <b>CELDA</b>, el argumento  tipo_información  puede ser uno de los siguientes valores:<br>
-        <p>
+            </li><br>
 
-          <table  class="tabla-funciones">
-            <thead>
-              <tr>
-                <th>
-                  <p>
-                    <b class="ocpLegacyBold">tipo_información</b>
-                  </p>
-                </th>
-                <th>
-                  <p>
-                    <b class="ocpLegacyBold">Resultado</b>
-                  </p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"dirección"</p>
-                </td>
-                <td>
-                  <p>Muestra una referencia absoluta como texto sin formato de la celda superior izquierda de  referencia .</p>
-                </td>
-              </tr>
-              
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"columna"</p>
-                </td>
-                <td>
-                  <p>Muestra el número de columna de la celda de referencia</p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"color"</p>
-                </td>
-                <td>
-                  <p>Muestra 1 si la celda superior izquierda de  referencia  tiene un formato rojo para los valores negativos. Por ejemplo, cuando el formato de número personalizado es #,##0_);[Red](#,##0), de lo contrario, muestra 0.
-                  </p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"contenido"</p>
-                </td>
-                <td>
-                  <p>Muestra el valor que aparece en la celda superior izquierda de referencia.</p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"prefijo"</p>
-                </td>
-                <td>
-                  <p>Muestra un valor de texto basado en la alineación horizontal del texto en la celda de  referencia . Las comillas simples (') se utilizan para el texto alineado a la izquierda, las comillas dobles (") para el texto alineado a la derecha, el signo de intercalación (^) para el texto centrado y, para todo lo demás, se deja el espacio vacío.
-                  </p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"fila"</p>
-                </td>
-                <td>
-                  <p>Muestra el número de fila de la celda superior izquierda de referencia.</p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"tipo"</p>
-                </td>
-                <td>
-                  <p>Muestra el tipo de datos de la celda de  referencia . Se muestran los siguientes valores: "b" para las celdas vacías, "l" (por "label", que significa "etiqueta" en inglés) para las celdas que contienen texto sin formato y "v" (por valor) para las celdas que contienen cualquier otro tipo de dato.
-                  </p>
-                </td>
-              </tr>
-               <tr>
-                <td class="nombre-funcion">
-                  <p>"ancho"</p>
-                </td>
-                <td>
-                  <p>Muestra el ancho de la columna en términos de la cantidad de caracteres que pueden caber en la celda de  referencia . El número que se muestra se determina en función del ancho del carácter cero (0) en el tamaño de fuente predeterminado. Ten en cuenta que este ancho es diferente al ancho de celda que utiliza Hojas&nbsp;de&nbsp;cálculo&nbsp;de&nbsp;Google en otros contextos, ya que ese ancho se define en términos de píxeles.</p>
-                </td>
-              </tr>
-            <!-- 
-               <tr>
-                <td class="nombre-funcion">
-                  <p></p>
-                </td>
-                <td>
-                  <p> .</p>
-                </td>
-              </tr>
- -->
+            
 
-            </tbody>
-          </table>
-
-        </p>
-        </li><br>
-
-        <li><p><b>Códigos de formato de CELDA</b></p>
-          <p> La siguiente lista describe los valores de texto que devuelve la función CELDA cuando el argumento tipo_de_info es "formato" y el argumento referencia es una celda con formato para números integrados.</p>
-          <p>
-            <table class="collapse">
-              <table class="tabla-funciones">
-                <thead>
-                  <tr>
-                    <th>
-                      <p>
-                        <b class="ocpLegacyBold">Formato</b>
-                      </p>
-                    </th>
-                    <th>
-                      <p>
-                        <b class="ocpLegacyBold">La función CELDA devuelve</b>
-                      </p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p>Estándar</p>
-                    </td>
-                    <td>
-                      <p>"G"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>0</p>
-                    </td>
-                    <td>
-                      <p>"F0"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>#.##0</p>
-                    </td>
-                    <td>
-                      <p>".0"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>0,00</p>
-                    </td>
-                    <td>
-                      <p>"F2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>#.##0,00</p>
-                    </td>
-                    <td>
-                      <p>".2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>$#.##0_);($#.##0)</p>
-                    </td>
-                    <td>
-                      <p>"C0"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>$#.##0;(rojo)-$#.##0</p>
-                    </td>
-                    <td>
-                      <p>"C0-"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>$#.##0,00_);($#.##0,00)</p>
-                    </td>
-                    <td>
-                      <p>"C2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>$#.##0,00;(rojo)-$#.##0,00</p>
-                    </td>
-                    <td>
-                      <p>"C2-"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>0%</p>
-                    </td>
-                    <td>
-                      <p>"P0"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>0,00%</p>
-                    </td>
-                    <td>
-                      <p>"P2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>0,00E+00</p>
-                    </td>
-                    <td>
-                      <p>"C2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p># ?/? o # ??/??</p>
-                    </td>
-                    <td>
-                      <p>"G"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>d/m/aa o d/m/aa h:mm o dd/mm/aa</p>
-                    </td>
-                    <td>
-                      <p>"D4"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>d-mmm-aa o dd-mm-aa</p>
-                    </td>
-                    <td>
-                      <p>"D1"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>d-mmm</p>
-                    </td>
-                    <td>
-                      <p>"D2"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>mmm-aa</p>
-                    </td>
-                    <td>
-                      <p>"D3"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>mm/dd</p>
-                    </td>
-                    <td>
-                      <p>"D5"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>h:mm a.m./p.m.</p>
-                    </td>
-                    <td>
-                      <p>"D7"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>h:mm:ss a.m./p.m.</p>
-                    </td>
-                    <td>
-                      <p>"D6"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>h:mm</p>
-                    </td>
-                    <td>
-                      <p>"D9"</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>h:mm:ss</p>
-                    </td>
-                    <td>
-                      <p>"D8"</p>
-                    </td>
-                  </tr>
-                </tbody>
-            </table>
-          </p>
-        </li><br>
-
-        <li>
-          <p>En el caso de la función <b>TIPO</b>, muestra los siguientes números para los valores de error correspondientes:</p>
-          <p>
-            <table class="tabla-funciones">
-              <thead>
-                <tr>
-                  <th>
-                    <p>
-                      <b class="ocpLegacyBold">Número</b>
-                    </p>
-                  </th>
-                  <th>
-                    <p>
-                      <b class="ocpLegacyBold">Tipo de error</b>
-                    </p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <p>#NULL!</p>
-                  </td>
-                </tr>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <p>#DIV/0!</p>
-                  </td>
-                </tr>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <p>#VALUE!</p>
-                  </td>
-                </tr>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <p>#REF!</p>
-                  </td>
-                </tr>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <p> #NAME?</p>
-                  </td>
-                </tr>
-                 <tr>
-              <td class="nombre-funcion">
-                    <p>6</p>
-                  </td>
-                  <td>
-                    <p> #NUM!</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="nombre-funcion">
-                        <p>6</p>
-                      </td>
-                      <td>
-                        <p> #N/A</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="nombre-funcion">
-                            <p>8</p>
-                          </td>
-                          <td>
-                            <p>Para todos los demás errores</p>
-                          </td>
-                        </tr>
-              </tbody>
-            </table>
-          </p>
-        </li>
+          
           </ol>
         
       </div>
